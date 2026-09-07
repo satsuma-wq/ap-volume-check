@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>四ツ屋町 斜線が効かない整形地</title>
+<style>:root{color-scheme:light dark}body{margin:0}img{max-width:100%}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --paper:#F4F6F5; --surface:#FFFFFF; --surface-2:#EBEFEF;
+  --ink:#17242E; --ink-2:#4A5C68; --ink-3:#778892;
+  --line:#CBD5D6; --line-2:#E0E6E6; --line-strong:#B4C0C2;
+  --accent:#1F6089; --accent-2:#E2ECF3; --accent-ink:#154765;
+  --ok:#2C7A5B; --ok-bg:#E3F0EA;
+  --ng:#A93226; --ng-bg:#F6E4E2;
+  --warn:#8F6318; --warn-bg:#F5ECDB;
+  --shadow:0 1px 2px rgba(23,36,46,.06), 0 8px 24px -16px rgba(23,36,46,.28);
+  --serif:"Shippori Mincho B1",'Hiragino Mincho ProN','Yu Mincho',serif;
+  --sans:"Zen Kaku Gothic New",'Hiragino Sans','Yu Gothic',system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F161B; --surface:#161F26; --surface-2:#1D272F;
+    --ink:#E7EDEF; --ink-2:#A8B7C0; --ink-3:#7C8C96;
+    --line:#2B3A44; --line-2:#222E36; --line-strong:#3A4C58;
+    --accent:#74B4DC; --accent-2:#1A2C39; --accent-ink:#9CCDEC;
+    --ok:#63C296; --ok-bg:#162C24;
+    --ng:#E4837A; --ng-bg:#33201E;
+    --warn:#D6A64C; --warn-bg:#2E2618;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F161B; --surface:#161F26; --surface-2:#1D272F;
+  --ink:#E7EDEF; --ink-2:#A8B7C0; --ink-3:#7C8C96;
+  --line:#2B3A44; --line-2:#222E36; --line-strong:#3A4C58;
+  --accent:#74B4DC; --accent-2:#1A2C39; --accent-ink:#9CCDEC;
+  --ok:#63C296; --ok-bg:#162C24;
+  --ng:#E4837A; --ng-bg:#33201E;
+  --warn:#D6A64C; --warn-bg:#2E2618;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px 96px}
+h1,h2,h3{font-family:var(--serif);text-wrap:balance;margin:0}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* masthead */
+.mast{border-bottom:2px solid var(--ink);padding:44px 0 18px}
+.eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-3);font-weight:500;font-family:var(--mono)}
+.mast h1{font-size:clamp(29px,4.4vw,42px);line-height:1.28;margin:10px 0 6px;font-weight:700}
+.mast .sub{color:var(--ink-2);font-size:14.5px;margin:0}
+.specrow{display:flex;flex-wrap:wrap;margin-top:22px;
+  border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--surface)}
+.specrow div{flex:1 1 148px;padding:11px 14px;border-right:1px solid var(--line-2)}
+.specrow div:last-child{border-right:0}
+.specrow dt{font-size:10.5px;letter-spacing:.13em;color:var(--ink-3);margin:0 0 3px;font-family:var(--mono)}
+.specrow dd{margin:0;font-size:16px;font-weight:700;font-family:var(--mono);
+  font-variant-numeric:tabular-nums}
+.specrow dd small{font-size:11.5px;font-weight:400;color:var(--ink-2);font-family:var(--sans)}
+
+/* section */
+section{margin-top:52px}
+.shead{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--line);
+  padding-bottom:9px;margin-bottom:22px}
+.shead h2{font-size:22px;font-weight:700}
+.shead .tag{font-family:var(--mono);font-size:11px;color:var(--ink-3);letter-spacing:.1em}
+p{margin:0 0 14px;max-width:68ch}
+.lead{font-size:16.5px;color:var(--ink-2);max-width:70ch}
+
+/* verdict */
+.verdicts{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:14px}
+.v{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:18px 18px 16px;
+  box-shadow:var(--shadow);border-top:4px solid var(--line)}
+.v.ng{border-top-color:var(--ng)} .v.ok{border-top-color:var(--ok)} .v.warn{border-top-color:var(--warn)}
+.v .stamp{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:600;
+  letter-spacing:.14em;padding:3px 9px;border-radius:2px;margin-bottom:9px}
+.v.ng .stamp{background:var(--ng-bg);color:var(--ng)}
+.v.ok .stamp{background:var(--ok-bg);color:var(--ok)}
+.v.warn .stamp{background:var(--warn-bg);color:var(--warn)}
+.v h3{font-size:17px;margin-bottom:7px;line-height:1.45}
+.v p{font-size:13.5px;color:var(--ink-2);margin:0;line-height:1.7}
+.v .cite{margin-top:10px;padding-top:9px;border-top:1px dashed var(--line);
+  font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+
+/* ===== 積層図（側面ボリューム） ===== */
+.building{border:1px solid var(--line-strong);border-radius:3px;
+  background:var(--surface);padding:18px;box-shadow:var(--shadow)}
+.building .bt{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+  padding-bottom:11px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+.building .bt b{font-family:var(--serif);font-size:16px}
+.building .bt em{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--ink-3)}
+.roofline{height:0;border-top:2px solid var(--ink);margin:0 0 0 74px;position:relative}
+.roofline span{position:absolute;right:0;top:-19px;font-family:var(--mono);
+  font-size:10.5px;color:var(--ink-3)}
+.floor{display:grid;grid-template-columns:74px 1fr;gap:14px;align-items:center;padding:9px 0}
+.floor + .floor{border-top:1px dashed var(--line)}
+.floor .lab{font-family:var(--mono);font-size:12px;color:var(--ink-3);font-weight:700}
+.floor .lab small{display:block;font-size:10px;font-weight:400;letter-spacing:.04em}
+.units{display:grid;gap:6px}
+.u5{grid-template-columns:repeat(5,1fr)} .u4{grid-template-columns:repeat(4,1fr)}
+.u3{grid-template-columns:repeat(3,1fr)} .u6{grid-template-columns:repeat(6,1fr)}
+.unit{background:var(--accent-2);border:1px solid var(--accent);
+  border-radius:2px;padding:9px 4px;text-align:center}
+.unit b{display:block;font-family:var(--mono);font-size:12.5px;color:var(--accent-ink)}
+.unit span{font-size:10.5px;color:var(--ink-2)}
+.unit.add{background:var(--warn-bg);border-color:var(--warn)}
+.unit.add b{color:var(--warn)}
+.groundline{height:0;border-top:3px solid var(--ink);margin:6px 0 0 74px}
+.corridor{margin-top:13px;padding:8px 12px;background:var(--surface-2);
+  border-radius:2px;font-size:12.5px;color:var(--ink-2);text-align:center}
+.bfoot{margin-top:12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));
+  gap:0;border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.bfoot div{padding:8px 10px;border-right:1px solid var(--line-2);text-align:center}
+.bfoot div:last-child{border-right:0}
+.bfoot dt{font-size:10px;letter-spacing:.1em;color:var(--ink-3);font-family:var(--mono);margin:0 0 2px}
+.bfoot dd{margin:0;font-family:var(--mono);font-size:15px;font-weight:600;
+  font-variant-numeric:tabular-nums}
+.bfoot dd small{font-size:10.5px;font-weight:400;color:var(--ink-2);font-family:var(--sans)}
+
+/* ===== レントロール ===== */
+tr.tot td{background:var(--surface-2);font-weight:700;border-top:2px solid var(--line-strong)}
+tr.sub td{background:var(--accent-2);font-weight:600}
+.rr-foot{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;margin-top:14px;
+  border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--surface)}
+.rr-foot div{padding:11px 14px;border-right:1px solid var(--line-2);text-align:center}
+.rr-foot div:last-child{border-right:0}
+.rr-foot dt{font-size:10px;letter-spacing:.1em;color:var(--ink-3);font-family:var(--mono);margin:0 0 3px}
+.rr-foot dd{margin:0;font-family:var(--mono);font-size:19px;font-weight:600;font-variant-numeric:tabular-nums}
+.rr-foot dd small{font-size:11px;font-weight:400;color:var(--ink-2);font-family:var(--sans)}
+.rr-foot div.acc{background:var(--accent-2)}
+.rr-foot div.acc dd{color:var(--accent-ink)}
+
+/* ===== 補足 ===== */
+.supp{list-style:none;padding:0;margin:0;border:1px solid var(--line);border-radius:4px;
+  background:var(--surface);overflow:hidden}
+.supp li{padding:13px 16px;border-bottom:1px solid var(--line-2);font-size:13px;
+  color:var(--ink-2);line-height:1.72}
+.supp li:last-child{border-bottom:0}
+.supp li > b{color:var(--ink);display:block;font-size:14px;margin-bottom:2px;font-family:var(--sans)}
+
+/* logic chain */
+.chain{display:grid;margin:24px 0 6px;border:1px solid var(--line);
+  border-radius:4px;overflow:hidden;background:var(--surface)}
+.step{display:grid;grid-template-columns:52px 1fr;border-bottom:1px solid var(--line-2)}
+.step:last-child{border-bottom:0}
+.step .k{background:var(--surface-2);display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:13px;font-weight:600;color:var(--accent);
+  border-right:1px solid var(--line-2)}
+.step .b{padding:14px 16px}
+.step .b > b{display:block;font-size:14.5px;margin-bottom:3px}
+.step .b span b{display:inline;font-size:inherit;margin:0}
+.step .b span{font-size:13px;color:var(--ink-2);line-height:1.7;display:block}
+.step.res .k{background:var(--ng-bg);color:var(--ng)}
+.step.res2 .k{background:var(--ok-bg);color:var(--ok)}
+
+/* table */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:580px;font-size:13.5px}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid var(--line-2);vertical-align:top}
+thead th{background:var(--surface-2);font-size:11px;letter-spacing:.1em;color:var(--ink-2);
+  font-weight:600;font-family:var(--mono);white-space:nowrap;border-bottom:1px solid var(--line)}
+tbody tr:last-child td{border-bottom:0}
+td.n,th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.hi td{background:var(--accent-2)}
+tr.hi td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+.law{font-family:var(--mono);font-size:11.5px;color:var(--accent-ink);white-space:nowrap}
+.qt{font-size:12.5px;color:var(--ink-2);line-height:1.65;border-left:2px solid var(--line);
+  padding-left:10px;margin-top:5px;display:block}
+.pill{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:600;
+  padding:2px 7px;border-radius:2px;letter-spacing:.06em}
+.pill.ok{background:var(--ok-bg);color:var(--ok)}
+.pill.ng{background:var(--ng-bg);color:var(--ng)}
+.pill.warn{background:var(--warn-bg);color:var(--warn)}
+
+/* plan */
+.plan{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:18px;
+  box-shadow:var(--shadow)}
+.plan svg{width:100%;height:auto;display:block;max-width:560px;margin:0 auto}
+.plan.wide svg{max-width:100%}
+.svg-serif{font-family:var(--serif)}
+.svg-sans{font-family:var(--sans)} .svg-mono{font-family:var(--mono)}
+.plan svg text{fill:var(--ink-2)}
+.cap{font-size:12px;color:var(--ink-3);margin:12px auto 0;text-align:left;line-height:1.7;max-width:56ch}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.twocol table{min-width:0}
+.twocol .tw{max-width:100%}
+.twocol.wide-l{grid-template-columns:1.05fr .95fr}
+@media(max-width:860px){.twocol,.twocol.wide-l{grid-template-columns:1fr}
+  .units{grid-template-columns:repeat(3,1fr)!important}}
+
+.callout{background:var(--warn-bg);border:1px solid color-mix(in srgb,var(--warn) 32%,transparent);
+  border-radius:4px;padding:16px 18px;margin:20px 0}
+.callout > b{color:var(--warn);font-size:14px;display:block;margin-bottom:5px;font-family:var(--serif)}
+.callout p{margin:0;font-size:13.5px;color:var(--ink-2);max-width:none}
+.callout p b{display:inline;color:inherit;font-size:inherit;margin:0;font-family:var(--sans)}
+
+.acts{list-style:none;padding:0;margin:0;counter-reset:a;display:grid;gap:10px}
+.acts li{counter-increment:a;display:grid;grid-template-columns:30px 1fr;gap:13px;
+  background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:14px 16px}
+.acts li::before{content:counter(a);font-family:var(--mono);font-size:12px;font-weight:600;
+  color:var(--accent);background:var(--accent-2);border-radius:2px;height:23px;
+  display:flex;align-items:center;justify-content:center}
+.acts b{display:block;font-size:14.5px;margin-bottom:3px}
+.acts span{font-size:13px;color:var(--ink-2);line-height:1.7}
+.tel{font-family:var(--mono);font-size:12.5px;color:var(--accent-ink);
+  background:var(--accent-2);padding:1px 6px;border-radius:2px;white-space:nowrap}
+
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
+  font-size:12px;color:var(--ink-3);line-height:1.85}
+footer h3{font-size:13px;font-family:var(--sans);font-weight:700;color:var(--ink-2);
+  margin:0 0 6px}
+footer ul{padding-left:1.1em;margin:0 0 16px}
+footer a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<p style="max-width:1020px;margin:0 auto;padding:14px 20px 0;font-size:12.5px"><a href="./" style="color:#154765;text-decoration:none">&larr; 一覧</a></p>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="eyebrow">案件 15558 ／ ボリュームチェック</div>
+  <h1>四ツ屋町　斜線が効かない整形地</h1>
+  <p class="sub">新潟県新潟市中央区四ツ屋町２丁目５１３３番６５・５１３３番１０８　／　新潟駅 約3,300m（バス便）　／　現況：家屋3棟あり（解体は買主負担）　／　媒介：株式会社千代田開発</p>
+  <div class="specrow">
+    <div><dt>売出価格</dt><dd>780<small> 万円</small></dd></div>
+    <div><dt>敷地</dt><dd>220.20<small> ㎡ / 66.6坪</small></dd></div>
+    <div><dt>建蔽／容積</dt><dd>60<small>％</small>/200<small>％</small></dd></div>
+    <div><dt>間口</dt><dd>10.0<small> m ／西6m市道</small></dd></div>
+    <div><dt>階数</dt><dd>3<small> 階</small></dd></div>
+    <div><dt>戸数</dt><dd>9<small> 戸 / 1戸36.3㎡</small></dd></div>
+  </div>
+</header>
+
+<section>
+  <div class="shead"><h2>ボリューム図</h2><span class="tag">MASSING</span></div>
+  <p>斜線制限がほとんど効かない土地です。第一種中高層住居専用地域ですが<b>都市計画情報で北側斜線は「なし」</b>（日影規制の対象区域では法56条1項3号が適用除外）。日影規制の対象は<b>高さ10m超</b>なので、木造3階建て（9.5m）なら対象外。<b>戸数を決めるのは建蔽率60％と、新潟市共同住宅指導要綱の駐車場付置義務</b>です。</p>
+
+  <div class="building">
+    <div class="bt"><b>木造3階建て　1LDK 36.33㎡ × 9戸</b><em>GL＋9.5m ／ 片廊下型（廊下は北）</em></div>
+    <div class="roofline"><span>屋根</span></div>
+    <div class="floor">
+      <div class="lab">3F<small>3戸</small></div>
+      <div class="units u3">
+        <div class="unit"><b>301</b><span>1LDK 36.33㎡</span></div>
+        <div class="unit"><b>302</b><span>1LDK 36.33㎡</span></div>
+        <div class="unit"><b>303</b><span>1LDK 36.33㎡</span></div>
+      </div>
+    </div>
+    <div class="floor">
+      <div class="lab">2F<small>3戸</small></div>
+      <div class="units u3">
+        <div class="unit"><b>201</b><span>1LDK 36.33㎡</span></div>
+        <div class="unit"><b>202</b><span>1LDK 36.33㎡</span></div>
+        <div class="unit"><b>203</b><span>1LDK 36.33㎡</span></div>
+      </div>
+    </div>
+    <div class="floor">
+      <div class="lab">1F<small>3戸</small></div>
+      <div class="units u3">
+        <div class="unit"><b>101</b><span>1LDK 36.33㎡</span></div>
+        <div class="unit"><b>102</b><span>1LDK 36.33㎡</span></div>
+        <div class="unit"><b>103</b><span>1LDK 36.33㎡</span></div>
+      </div>
+    </div>
+    <div class="groundline"></div>
+    <div class="corridor">建物 8.00 × 16.515m ／ 開放廊下1.4m（容積不算入）を北側に、住戸の主開口とバルコニー1.0mを南側に ／ 駐車4台は西＝6m市道側に直角駐車 ／ 駐輪9台以上</div>
+    <div class="bfoot">
+      <div><dt>建築面積</dt><dd>132.12<small>㎡</small></dd></div>
+      <div><dt>専有計</dt><dd>327.00<small>㎡</small></dd></div>
+      <div><dt>容積率</dt><dd>148<small>％</small></dd></div>
+      <div><dt>施工床</dt><dd>119.9<small>坪</small></dd></div>
+      <div><dt>建築費</dt><dd>8,393<small>万</small></dd></div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <b>12戸は要綱の駐車場付置義務で詰む</b>
+    <p>同じ建築面積を4戸/階で割れば12戸（1戸27.25㎡）まで乗り、専有計は327.00㎡で変わりません。しかし<b>新潟市共同住宅の建築に関する指導要綱は1棟10戸以上が対象</b>で、第一種中高層住居専用地域では<b>戸数の60％＝8台を同一敷地内に確保</b>する必要があります。間口10mでは直角駐車4台が限界（2列目には通路5.5mが要り、奥行が足りない）。<b>9戸に抑えて要綱の対象外とするのが上限</b>です。</p>
+  </div>
+
+  <h3 style="font-size:16px;margin:30px 0 12px">基準階平面プラン（1LDK 36.33㎡ × 3戸/階）</h3>
+  <div class="plan wide">
+      <svg viewBox="0 0 900 512" role="img" aria-label="基準階平面図。北側の開放廊下1.4mに面して1LDK 36.33㎡が3戸並ぶ。各戸は玄関・WC・洗面・UB1216・LDK9.0帖・洋室6.5帖・CL・南側バルコニー。">
+        <rect x="150.0" y="96.0" width="660.6" height="56.0" style="fill:var(--surface-2);stroke:var(--ink-2);stroke-width:2.6"/>
+        <text x="480.3" y="116.8" text-anchor="middle" font-size="10" class="svg-mono" style="fill:var(--ink-2)">開放廊下  W=1,400（北側）</text>
+        <rect x="46.0" y="96.0" width="104.0" height="56.0" style="fill:none;stroke:var(--ink-3);stroke-width:1.4" stroke-dasharray="4 3"/>
+        <line x1="59.0" y1="96.0" x2="59.0" y2="152.0" style="stroke:var(--ink-3);stroke-width:0.7"/>
+        <line x1="72.0" y1="96.0" x2="72.0" y2="152.0" style="stroke:var(--ink-3);stroke-width:0.7"/>
+        <line x1="85.0" y1="96.0" x2="85.0" y2="152.0" style="stroke:var(--ink-3);stroke-width:0.7"/>
+        <line x1="98.0" y1="96.0" x2="98.0" y2="152.0" style="stroke:var(--ink-3);stroke-width:0.7"/>
+        <line x1="111.0" y1="96.0" x2="111.0" y2="152.0" style="stroke:var(--ink-3);stroke-width:0.7"/>
+        <line x1="124.0" y1="96.0" x2="124.0" y2="152.0" style="stroke:var(--ink-3);stroke-width:0.7"/>
+        <line x1="137.0" y1="96.0" x2="137.0" y2="152.0" style="stroke:var(--ink-3);stroke-width:0.7"/>
+        <line x1="150.0" y1="96.0" x2="150.0" y2="152.0" style="stroke:var(--ink-3);stroke-width:0.7"/>
+        <text x="98.0" y="116.8" text-anchor="middle" font-size="9.5" class="svg-sans" style="fill:var(--ink-3)">外階段</text>
+        <rect x="150.0" y="416.0" width="660.6" height="40.0" style="fill:none;stroke:var(--ink-3);stroke-width:1.2" stroke-dasharray="5 3"/>
+        <text x="480.3" y="440.8" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink-3)">バルコニー D=1,000（跳ね出し・建築面積不算入）</text>
+        <rect x="150.0" y="152.0" width="660.6" height="264.0" style="fill:var(--surface);stroke:var(--ink-2);stroke-width:2.6"/>
+        <line x1="150.0" y1="220.0" x2="370.2" y2="220.0" style="stroke:var(--ink-2);stroke-width:1.3"/>
+        <rect x="150.0" y="152.0" width="62.0" height="68.0" style="fill:var(--surface-2);stroke:var(--ink-2);stroke-width:1.3"/>
+        <text x="181.0" y="180.0" text-anchor="middle" font-size="9.5" class="svg-sans" style="fill:var(--ink-2)">玄関</text>
+        <text x="181.0" y="193.6" text-anchor="middle" font-size="7.5" class="svg-mono" style="fill:var(--ink-3)">SC</text>
+        <path d="M210.0,152.0 L210.0,186.0 A34.0,34.0 0 0 1 178.1,163.6 Z" style="fill:none;stroke:var(--ink-3);stroke-width:0.8"/>
+        <rect x="212.0" y="152.0" width="46.0" height="54.0" style="fill:none;stroke:var(--ink-2);stroke-width:1.3"/>
+        <text x="235.0" y="174.4" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink-2)">WC</text>
+        <ellipse cx="235.0" cy="190.4" rx="7.6" ry="4.8" style="fill:none;stroke:var(--ink-3);stroke-width:0.8"/>
+        <rect x="258.0" y="152.0" width="48.0" height="68.0" style="fill:none;stroke:var(--ink-2);stroke-width:1.3"/>
+        <text x="282.0" y="178.4" text-anchor="middle" font-size="9" class="svg-sans" style="fill:var(--ink-2)">洗面</text>
+        <text x="282.0" y="192.8" text-anchor="middle" font-size="8" class="svg-mono" style="fill:var(--ink-3)">WM</text>
+        <rect x="306.0" y="152.0" width="64.2" height="68.0" style="fill:none;stroke:var(--ink-2);stroke-width:1.3"/>
+        <rect x="310.8" y="154.0" width="50.0" height="62.0" style="fill:none;stroke:var(--ink-3);stroke-width:0.8"/>
+        <text x="338.0" y="178.4" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink-2)">UB</text>
+        <text x="338.0" y="192.8" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink)" font-weight="600">1216</text>
+        <line x1="246.0" y1="220.0" x2="246.0" y2="416.0" style="stroke:var(--ink-2);stroke-width:1.3"/>
+        <rect x="150.0" y="220.0" width="48.0" height="36.0" style="fill:none;stroke:var(--ink-2);stroke-width:1.3"/>
+        <text x="174.0" y="243.2" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink-2)">CL</text>
+        <line x1="150.0" y1="256.0" x2="198.0" y2="256.0" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <line x1="150.0" y1="253.6" x2="198.0" y2="253.6" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <text x="198.0" y="314.0" text-anchor="middle" font-size="12" class="svg-serif" style="fill:var(--ink)" font-weight="700">洋室</text>
+        <text x="198.0" y="334.0" text-anchor="middle" font-size="11" class="svg-mono" style="fill:var(--ink-2)">6.5帖</text>
+        <text x="198.0" y="350.4" text-anchor="middle" font-size="8" class="svg-mono" style="fill:var(--ink-3)">10.68㎡</text>
+        <text x="308.0" y="304.0" text-anchor="middle" font-size="12" class="svg-serif" style="fill:var(--ink)" font-weight="700">LDK</text>
+        <text x="308.0" y="324.0" text-anchor="middle" font-size="11" class="svg-mono" style="fill:var(--ink-2)">9.0帖</text>
+        <text x="308.0" y="340.4" text-anchor="middle" font-size="8" class="svg-mono" style="fill:var(--ink-3)">15.21㎡</text>
+        <rect x="250.0" y="224.0" width="72.0" height="24.8" style="fill:none;stroke:var(--ink-3);stroke-width:0.8"/>
+        <text x="286.0" y="240.8" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink)" font-weight="600">K</text>
+        <line x1="254.0" y1="416.0" x2="358.0" y2="416.0" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <line x1="254.0" y1="413.6" x2="358.0" y2="413.6" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <line x1="162.0" y1="416.0" x2="234.0" y2="416.0" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <line x1="162.0" y1="413.6" x2="234.0" y2="413.6" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <text x="260.1" y="380.8" text-anchor="middle" font-size="10" class="svg-mono" style="fill:var(--accent-ink)" font-weight="600">専有面積 36.33㎡</text>
+        <line x1="370.2" y1="152.0" x2="370.2" y2="416.0" style="stroke:var(--ink-2);stroke-width:2.2"/>
+        <line x1="370.2" y1="220.0" x2="590.4" y2="220.0" style="stroke:var(--ink-2);stroke-width:1.3"/>
+        <rect x="370.2" y="152.0" width="62.0" height="68.0" style="fill:var(--surface-2);stroke:var(--ink-2);stroke-width:1.3"/>
+        <text x="401.2" y="180.0" text-anchor="middle" font-size="9.5" class="svg-sans" style="fill:var(--ink-2)">玄関</text>
+        <text x="401.2" y="193.6" text-anchor="middle" font-size="7.5" class="svg-mono" style="fill:var(--ink-3)">SC</text>
+        <path d="M430.2,152.0 L430.2,186.0 A34.0,34.0 0 0 1 398.3,163.6 Z" style="fill:none;stroke:var(--ink-3);stroke-width:0.8"/>
+        <rect x="432.2" y="152.0" width="46.0" height="54.0" style="fill:none;stroke:var(--ink-2);stroke-width:1.3"/>
+        <text x="455.2" y="174.4" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink-2)">WC</text>
+        <ellipse cx="455.2" cy="190.4" rx="7.6" ry="4.8" style="fill:none;stroke:var(--ink-3);stroke-width:0.8"/>
+        <rect x="478.2" y="152.0" width="48.0" height="68.0" style="fill:none;stroke:var(--ink-2);stroke-width:1.3"/>
+        <text x="502.2" y="178.4" text-anchor="middle" font-size="9" class="svg-sans" style="fill:var(--ink-2)">洗面</text>
+        <text x="502.2" y="192.8" text-anchor="middle" font-size="8" class="svg-mono" style="fill:var(--ink-3)">WM</text>
+        <rect x="526.2" y="152.0" width="64.2" height="68.0" style="fill:none;stroke:var(--ink-2);stroke-width:1.3"/>
+        <rect x="531.0" y="154.0" width="50.0" height="62.0" style="fill:none;stroke:var(--ink-3);stroke-width:0.8"/>
+        <text x="558.2" y="178.4" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink-2)">UB</text>
+        <text x="558.2" y="192.8" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink)" font-weight="600">1216</text>
+        <line x1="466.2" y1="220.0" x2="466.2" y2="416.0" style="stroke:var(--ink-2);stroke-width:1.3"/>
+        <rect x="370.2" y="220.0" width="48.0" height="36.0" style="fill:none;stroke:var(--ink-2);stroke-width:1.3"/>
+        <text x="394.2" y="243.2" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink-2)">CL</text>
+        <line x1="370.2" y1="256.0" x2="418.2" y2="256.0" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <line x1="370.2" y1="253.6" x2="418.2" y2="253.6" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <text x="418.2" y="314.0" text-anchor="middle" font-size="12" class="svg-serif" style="fill:var(--ink)" font-weight="700">洋室</text>
+        <text x="418.2" y="334.0" text-anchor="middle" font-size="11" class="svg-mono" style="fill:var(--ink-2)">6.5帖</text>
+        <text x="418.2" y="350.4" text-anchor="middle" font-size="8" class="svg-mono" style="fill:var(--ink-3)">10.68㎡</text>
+        <text x="528.2" y="304.0" text-anchor="middle" font-size="12" class="svg-serif" style="fill:var(--ink)" font-weight="700">LDK</text>
+        <text x="528.2" y="324.0" text-anchor="middle" font-size="11" class="svg-mono" style="fill:var(--ink-2)">9.0帖</text>
+        <text x="528.2" y="340.4" text-anchor="middle" font-size="8" class="svg-mono" style="fill:var(--ink-3)">15.21㎡</text>
+        <rect x="470.2" y="224.0" width="72.0" height="24.8" style="fill:none;stroke:var(--ink-3);stroke-width:0.8"/>
+        <text x="506.2" y="240.8" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink)" font-weight="600">K</text>
+        <line x1="474.2" y1="416.0" x2="578.2" y2="416.0" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <line x1="474.2" y1="413.6" x2="578.2" y2="413.6" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <line x1="382.2" y1="416.0" x2="454.2" y2="416.0" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <line x1="382.2" y1="413.6" x2="454.2" y2="413.6" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <text x="480.3" y="380.8" text-anchor="middle" font-size="10" class="svg-mono" style="fill:var(--accent-ink)" font-weight="600">専有面積 36.33㎡</text>
+        <line x1="590.4" y1="152.0" x2="590.4" y2="416.0" style="stroke:var(--ink-2);stroke-width:2.2"/>
+        <line x1="590.4" y1="220.0" x2="810.6" y2="220.0" style="stroke:var(--ink-2);stroke-width:1.3"/>
+        <rect x="590.4" y="152.0" width="62.0" height="68.0" style="fill:var(--surface-2);stroke:var(--ink-2);stroke-width:1.3"/>
+        <text x="621.4" y="180.0" text-anchor="middle" font-size="9.5" class="svg-sans" style="fill:var(--ink-2)">玄関</text>
+        <text x="621.4" y="193.6" text-anchor="middle" font-size="7.5" class="svg-mono" style="fill:var(--ink-3)">SC</text>
+        <path d="M650.4,152.0 L650.4,186.0 A34.0,34.0 0 0 1 618.5,163.6 Z" style="fill:none;stroke:var(--ink-3);stroke-width:0.8"/>
+        <rect x="652.4" y="152.0" width="46.0" height="54.0" style="fill:none;stroke:var(--ink-2);stroke-width:1.3"/>
+        <text x="675.4" y="174.4" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink-2)">WC</text>
+        <ellipse cx="675.4" cy="190.4" rx="7.6" ry="4.8" style="fill:none;stroke:var(--ink-3);stroke-width:0.8"/>
+        <rect x="698.4" y="152.0" width="48.0" height="68.0" style="fill:none;stroke:var(--ink-2);stroke-width:1.3"/>
+        <text x="722.4" y="178.4" text-anchor="middle" font-size="9" class="svg-sans" style="fill:var(--ink-2)">洗面</text>
+        <text x="722.4" y="192.8" text-anchor="middle" font-size="8" class="svg-mono" style="fill:var(--ink-3)">WM</text>
+        <rect x="746.4" y="152.0" width="64.2" height="68.0" style="fill:none;stroke:var(--ink-2);stroke-width:1.3"/>
+        <rect x="751.2" y="154.0" width="50.0" height="62.0" style="fill:none;stroke:var(--ink-3);stroke-width:0.8"/>
+        <text x="778.4" y="178.4" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink-2)">UB</text>
+        <text x="778.4" y="192.8" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink)" font-weight="600">1216</text>
+        <line x1="686.4" y1="220.0" x2="686.4" y2="416.0" style="stroke:var(--ink-2);stroke-width:1.3"/>
+        <rect x="590.4" y="220.0" width="48.0" height="36.0" style="fill:none;stroke:var(--ink-2);stroke-width:1.3"/>
+        <text x="614.4" y="243.2" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink-2)">CL</text>
+        <line x1="590.4" y1="256.0" x2="638.4" y2="256.0" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <line x1="590.4" y1="253.6" x2="638.4" y2="253.6" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <text x="638.4" y="314.0" text-anchor="middle" font-size="12" class="svg-serif" style="fill:var(--ink)" font-weight="700">洋室</text>
+        <text x="638.4" y="334.0" text-anchor="middle" font-size="11" class="svg-mono" style="fill:var(--ink-2)">6.5帖</text>
+        <text x="638.4" y="350.4" text-anchor="middle" font-size="8" class="svg-mono" style="fill:var(--ink-3)">10.68㎡</text>
+        <text x="748.4" y="304.0" text-anchor="middle" font-size="12" class="svg-serif" style="fill:var(--ink)" font-weight="700">LDK</text>
+        <text x="748.4" y="324.0" text-anchor="middle" font-size="11" class="svg-mono" style="fill:var(--ink-2)">9.0帖</text>
+        <text x="748.4" y="340.4" text-anchor="middle" font-size="8" class="svg-mono" style="fill:var(--ink-3)">15.21㎡</text>
+        <rect x="690.4" y="224.0" width="72.0" height="24.8" style="fill:none;stroke:var(--ink-3);stroke-width:0.8"/>
+        <text x="726.4" y="240.8" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink)" font-weight="600">K</text>
+        <line x1="694.4" y1="416.0" x2="798.4" y2="416.0" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <line x1="694.4" y1="413.6" x2="798.4" y2="413.6" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <line x1="602.4" y1="416.0" x2="674.4" y2="416.0" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <line x1="602.4" y1="413.6" x2="674.4" y2="413.6" style="stroke:var(--ink-2);stroke-width:0.9"/>
+        <text x="700.5" y="380.8" text-anchor="middle" font-size="10" class="svg-mono" style="fill:var(--accent-ink)" font-weight="600">専有面積 36.33㎡</text>
+        <text x="260.1" y="143.2" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--accent-ink)" font-weight="600">101 / 201 / 301</text>
+        <text x="480.3" y="143.2" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--accent-ink)" font-weight="600">102 / 202 / 302</text>
+        <text x="700.5" y="143.2" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--accent-ink)" font-weight="600">103 / 203 / 303</text>
+        <line x1="150.0" y1="79.2" x2="370.2" y2="79.2" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="150.0" y1="75.2" x2="150.0" y2="83.2" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="370.2" y1="75.2" x2="370.2" y2="83.2" style="stroke:var(--ink-3);stroke-width:1"/>
+        <text x="260.1" y="73.6" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink-3)">5,505</text>
+        <line x1="370.2" y1="79.2" x2="590.4" y2="79.2" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="370.2" y1="75.2" x2="370.2" y2="83.2" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="590.4" y1="75.2" x2="590.4" y2="83.2" style="stroke:var(--ink-3);stroke-width:1"/>
+        <text x="480.3" y="73.6" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink-3)">5,505</text>
+        <line x1="590.4" y1="79.2" x2="810.6" y2="79.2" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="590.4" y1="75.2" x2="590.4" y2="83.2" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="810.6" y1="75.2" x2="810.6" y2="83.2" style="stroke:var(--ink-3);stroke-width:1"/>
+        <text x="700.5" y="73.6" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink-3)">5,505</text>
+        <line x1="150.0" y1="54.0" x2="810.6" y2="54.0" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="150.0" y1="50.0" x2="150.0" y2="58.0" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="810.6" y1="50.0" x2="810.6" y2="58.0" style="stroke:var(--ink-3);stroke-width:1"/>
+        <text x="480.3" y="48.4" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink-3)">16,515</text>
+        <line x1="832.6" y1="152.0" x2="832.6" y2="416.0" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="828.6" y1="152.0" x2="836.6" y2="152.0" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="828.6" y1="416.0" x2="836.6" y2="416.0" style="stroke:var(--ink-3);stroke-width:1"/>
+        <text x="832.6" y="284.0" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink-3)" transform="rotate(-90 832.6 284.0)">6,600</text>
+        <line x1="832.6" y1="96.0" x2="832.6" y2="152.0" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="828.6" y1="96.0" x2="836.6" y2="96.0" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="828.6" y1="152.0" x2="836.6" y2="152.0" style="stroke:var(--ink-3);stroke-width:1"/>
+        <text x="832.6" y="124.0" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink-3)" transform="rotate(-90 832.6 124.0)">1,400</text>
+        <line x1="860.6" y1="96.0" x2="860.6" y2="456.0" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="856.6" y1="96.0" x2="864.6" y2="96.0" style="stroke:var(--ink-3);stroke-width:1"/>
+        <line x1="856.6" y1="456.0" x2="864.6" y2="456.0" style="stroke:var(--ink-3);stroke-width:1"/>
+        <text x="860.6" y="276.0" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink-3)" transform="rotate(-90 860.6 276.0)">9,000＋1,000</text>
+        <text x="480.3" y="31.2" text-anchor="middle" font-size="11" class="svg-serif" style="fill:var(--ink)" font-weight="700">基準階平面図（1階〜3階 共通）　S=1/100</text>
+        <text x="46.0" y="84.0" text-anchor="start" font-size="9" class="svg-sans" style="fill:var(--ink-3)">↑ 北（隣地）</text>
+        <text x="46.0" y="440.8" text-anchor="start" font-size="9" class="svg-sans" style="fill:var(--ink-3)">↓ 南（バルコニー・主開口）</text>
+        <text x="46.0" y="256.0" text-anchor="start" font-size="9" class="svg-sans" style="fill:var(--ink-3)">← 西 6m市道</text>
+        <text x="46.0" y="272.8" text-anchor="start" font-size="8.5" class="svg-sans" style="fill:var(--ink-3)">　（駐車4台）</text>
+      </svg>
+      <p class="cap" style="max-width:none">各住戸は玄関（SC＝下足入れ）・WC・洗面／洗濯機置場・UB1216・LDK9.0帖・洋室6.5帖・CL・<b>南側バルコニー1.0m</b>の1LDK。開放廊下1.4mを北側に取り、居室2室をどちらも南面に並べて採光を確保しています。バルコニーは1m以下の跳ね出しで建築面積不算入。外階段は廊下の西端に接続。寸法はmm表記。</p>
+  </div>
+  <div class="bfoot" style="margin-top:14px"><div><dt>建築面積</dt><dd>132.12<small>㎡</small></dd></div><div><dt>各階床面積</dt><dd>132.12<small>㎡</small></dd></div><div><dt>延べ床面積</dt><dd>396.36<small>㎡</small></dd></div><div><dt>容積対象床</dt><dd>327.00<small>㎡</small></dd></div><div><dt>専有／戸</dt><dd>36.33<small>㎡</small></dd></div><div><dt>高さ</dt><dd>GL＋9.5<small>m</small></dd></div></div>
+
+  <div class="twocol" style="margin-top:26px">
+    <div class="plan">
+      <svg viewBox="0 0 470 300" role="img" aria-label="配置図。間口10m・奥行22.02mの整形地に建物132.12㎡を東寄せで配置し、西側に駐車4台。">
+        <rect x="30" y="95" width="90" height="150" style="fill:var(--surface-2);stroke:var(--line);stroke-width:1"/>
+        <text x="75" y="166" text-anchor="middle" font-size="10.5" class="svg-sans" style="fill:var(--ink-2)" transform="rotate(-90 75 166)">西 市道 W=6.0m</text>
+        <rect x="120" y="95" width="330" height="150" style="fill:var(--accent-2);stroke:var(--accent);stroke-width:1.9"/>
+        <rect x="120" y="95" width="75" height="150" style="fill:var(--surface);fill-opacity:.55;stroke:var(--ink-3);stroke-width:1;stroke-dasharray:4 3"/>
+        <line x1="120" y1="132.5" x2="195" y2="132.5" style="stroke:var(--ink-3);stroke-width:0.8"/>
+        <line x1="120" y1="170" x2="195" y2="170" style="stroke:var(--ink-3);stroke-width:0.8"/>
+        <line x1="120" y1="207.5" x2="195" y2="207.5" style="stroke:var(--ink-3);stroke-width:0.8"/>
+        <text x="157" y="116" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink-3)">P1</text>
+        <text x="157" y="154" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink-3)">P2</text>
+        <text x="157" y="191" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink-3)">P3</text>
+        <text x="157" y="229" text-anchor="middle" font-size="9" class="svg-mono" style="fill:var(--ink-3)">P4</text>
+        <rect x="195.2" y="102.5" width="247.7" height="120" style="fill:var(--accent);fill-opacity:.22;stroke:var(--accent-ink);stroke-width:2.2"/>
+        <line x1="195.2" y1="123.5" x2="442.9" y2="123.5" style="stroke:var(--accent-ink);stroke-width:1;stroke-dasharray:5 3"/>
+        <line x1="277.8" y1="102.5" x2="277.8" y2="222.5" style="stroke:var(--accent-ink);stroke-width:0.9"/>
+        <line x1="360.4" y1="102.5" x2="360.4" y2="222.5" style="stroke:var(--accent-ink);stroke-width:0.9"/>
+        <text x="319" y="116" text-anchor="middle" font-size="8.5" class="svg-sans" style="fill:var(--accent-ink)">開放廊下 1.4m</text>
+        <text x="319" y="166" text-anchor="middle" font-size="13" font-weight="600" class="svg-mono" style="fill:var(--accent-ink)">132.12 ㎡ / 階</text>
+        <text x="319" y="184" text-anchor="middle" font-size="10.5" class="svg-sans" style="fill:var(--ink-2)">3層　3戸/階　計9戸</text>
+        <text x="319" y="199" text-anchor="middle" font-size="10" class="svg-mono" style="fill:var(--ink-2)">8.00 × 16.515 m</text>
+        <rect x="195.2" y="222.5" width="247.7" height="15" style="fill:none;stroke:var(--ink-3);stroke-width:1;stroke-dasharray:5 3"/>
+        <text x="319" y="234" text-anchor="middle" font-size="9" class="svg-sans" style="fill:var(--ink-3)">バルコニー 1.0m（建築面積不算入）</text>
+        <line x1="112" y1="95" x2="112" y2="245" style="stroke:var(--ok);stroke-width:4"/>
+        <text x="88" y="80" text-anchor="middle" font-size="11" font-weight="600" class="svg-mono" style="fill:var(--ok)">間口 10.0 m</text>
+        <line x1="98" y1="86" x2="112" y2="110" style="stroke:var(--ok);stroke-width:.9"/>
+        <text x="285" y="88" text-anchor="middle" font-size="10.5" class="svg-mono" style="fill:var(--ink-2)">22.02</text>
+        <text x="462" y="170" text-anchor="middle" font-size="10.5" class="svg-mono" style="fill:var(--ink-2)" transform="rotate(-90 462 170)">10.00</text>
+        <text x="157" y="262" text-anchor="middle" font-size="9.5" class="svg-sans" style="fill:var(--ink-3)">駐車4台（帯5.01m）</text>
+        <g transform="translate(40,62)">
+          <line x1="0" y1="12" x2="0" y2="-10" style="stroke:var(--ink);stroke-width:1.6"/>
+          <path d="M0,-15 L5,-2 L0,-5 L-5,-2 Z" style="fill:var(--ink)"/>
+          <text x="12" y="4" font-size="12" class="svg-mono" style="fill:var(--ink-2)">N</text>
+        </g>
+        <text x="460" y="290" text-anchor="end" font-size="9.5" class="svg-mono" style="fill:var(--ink-3)">机上ボリューム／要実測再検証</text>
+      </svg>
+      <p class="cap">配置図。建物を東（奥）に寄せ、西＝6m市道側に<b>駐車4台</b>（直角・奥行5.0m）。南北は北側隣地0.5m＋建物8.00m＋バルコニー1.0m＋南側隣地0.5mで間口10.0mを使い切ります。建物は道路境界から5.01m後退するため道路斜線にも余裕。</p>
+    </div>
+
+    <div class="plan">
+      <svg viewBox="0 0 470 300" role="img" aria-label="断面図。3階建て高さ9.5mが日影規制の閾値10mと道路斜線の内側に収まる。">
+        <line x1="30" y1="240" x2="450" y2="240" style="stroke:var(--ink);stroke-width:2"/>
+        <line x1="30" y1="80" x2="450" y2="80" style="stroke:var(--ng);stroke-width:1.4;stroke-dasharray:6 4"/>
+        <text x="34" y="72" text-anchor="start" font-size="10" font-weight="600" class="svg-mono" style="fill:var(--ng)">GL＋10.0m　日影規制の対象ライン</text>
+        <line x1="60" y1="240" x2="278" y2="-33" style="stroke:var(--ok);stroke-width:1.5"/>
+        <text x="188" y="110" font-size="10" font-weight="600" class="svg-mono" style="fill:var(--ok)">道路斜線 1.25</text>
+        <line x1="60" y1="240" x2="156" y2="240" style="stroke:var(--ink-2);stroke-width:4"/>
+        <text x="108" y="256" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink-3)">市道 6.0m</text>
+        <text x="196" y="256" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink-3)">後退 5.01m</text>
+        <rect x="236" y="88" width="180" height="152" style="fill:var(--accent);fill-opacity:.18;stroke:var(--accent-ink);stroke-width:2"/>
+        <line x1="236" y1="138.7" x2="416" y2="138.7" style="stroke:var(--accent-ink);stroke-width:.9"/>
+        <line x1="236" y1="189.3" x2="416" y2="189.3" style="stroke:var(--accent-ink);stroke-width:.9"/>
+        <text x="326" y="118" text-anchor="middle" font-size="11" class="svg-mono" style="fill:var(--accent-ink)">3F　3戸</text>
+        <text x="326" y="169" text-anchor="middle" font-size="11" class="svg-mono" style="fill:var(--accent-ink)">2F　3戸</text>
+        <text x="326" y="219" text-anchor="middle" font-size="11" class="svg-mono" style="fill:var(--accent-ink)">1F　3戸</text>
+        <text x="326" y="78" text-anchor="middle" font-size="10.5" font-weight="600" class="svg-mono" style="fill:var(--accent-ink)">GL＋9.5m</text>
+        <line x1="428" y1="240" x2="428" y2="62" style="stroke:var(--ink-3);stroke-width:1.2;stroke-dasharray:6 4"/>
+        <text x="437" y="140" font-size="9" class="svg-sans" style="fill:var(--ink-3)" transform="rotate(-90 437 140)">北側隣地境界</text>
+        <text x="30" y="276" font-size="9.5" class="svg-sans" style="fill:var(--ink-3)">隣地斜線：20m＋1.25L → 9.5m では効かない</text>
+        <text x="30" y="290" font-size="9.5" class="svg-sans" style="fill:var(--ink-3)">北側斜線：都市計画情報で「なし」（日影規制の対象区域のため法56条1項3号は適用除外）</text>
+      </svg>
+      <p class="cap">断面図。<b>高さ9.5mは日影規制の対象ライン（10m超）の内側</b>に収まり、道路斜線（反対側境界から12.84m×1.25＝16.05m）にも余裕があります。北側斜線は適用除外、隣地斜線は20m立上りで効きません。<b>設計で最高高さ10.0m以下を担保することが3階建て成立の条件</b>です。</p>
+    </div>
+  </div>
+
+  <div class="tw" style="margin-top:22px">
+    <table>
+      <thead><tr><th>ケース</th><th class="n">階数</th><th class="n">戸/階</th><th class="n">戸数</th><th class="n">1戸</th><th class="n">専有計</th><th class="n">容積</th><th class="n">施工床</th><th class="n">建築費</th><th>指導要綱</th></tr></thead>
+      <tbody>
+        <tr class="hi"><td><b>A</b>　1LDK・推奨</td><td class="n">3</td><td class="n">3</td><td class="n">9</td><td class="n">36.33㎡</td><td class="n">327.00㎡</td><td class="n">148%</td><td class="n">119.9坪</td><td class="n">8,393万</td><td>非適用（10戸未満）</td></tr>
+        <tr><td><b>B</b>　1K・戸数最大</td><td class="n">3</td><td class="n">4</td><td class="n">12</td><td class="n">27.25㎡</td><td class="n">327.00㎡</td><td class="n">148%</td><td class="n">119.9坪</td><td class="n">8,393万</td><td><span class="pill ng">駐車8台必要で不成立</span></td></tr>
+        <tr><td>C　2LDK</td><td class="n">3</td><td class="n">2</td><td class="n">6</td><td class="n">54.50㎡</td><td class="n">327.00㎡</td><td class="n">148%</td><td class="n">119.9坪</td><td class="n">8,393万</td><td>非適用</td></tr>
+        <tr><td>D　2階建て 1K</td><td class="n">2</td><td class="n">4</td><td class="n">8</td><td class="n">27.25㎡</td><td class="n">218.00㎡</td><td class="n">99%</td><td class="n">79.9坪</td><td class="n">4,796万</td><td>非適用・法27条も外れる</td></tr>
+        <tr><td>E　2階建て 1LDK</td><td class="n">2</td><td class="n">3</td><td class="n">6</td><td class="n">36.33㎡</td><td class="n">218.00㎡</td><td class="n">99%</td><td class="n">79.9坪</td><td class="n">4,796万</td><td>非適用</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:14px;font-size:13px;color:var(--ink-2)">いずれも片廊下型（開放廊下1.4m・容積不算入）、隣地離隔0.5m、南側バルコニー1.0m跳ね出し（建築面積不算入）。建築費は3階建て坪70万（法27条の1時間準耐火＝木三共）、2階建て坪60万。<b>A・B・Cは専有計が同じ327.00㎡</b>で、床の割り方だけが違います。容積は200％に対し148％しか使えず、<b>建蔽率60％＝132.12㎡が天井</b>。戸数は要綱で9戸が上限なので、余った容積は1戸あたりの面積に回すのが素直です。</p>
+</section>
+
+<section>
+  <div class="shead"><h2>想定レントロール</h2><span class="tag">RENT ROLL</span></div>
+  <p>案A（木造3階建て 1LDK 36.33㎡ × 9戸）の満室想定。新潟市中央区の実勢に新築プレミアムを乗せた水準です。全戸南向き・バルコニー付・駐車場4台を前提としています。</p>
+
+  <div class="tw">
+    <table>
+      <thead>
+        <tr><th>号室</th><th>階</th><th>間取り</th><th class="n">専有面積</th><th class="n">想定賃料</th><th class="n">共益費</th><th class="n">合計</th><th>備考</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">301</td><td>3F</td><td>1LDK</td><td class="n">36.33㎡</td><td class="n">66,000</td><td class="n">3,500</td><td class="n">69,500</td><td>最上階・西端・眺望</td></tr>
+        <tr><td class="num">302</td><td>3F</td><td>1LDK</td><td class="n">36.33㎡</td><td class="n">66,000</td><td class="n">3,500</td><td class="n">69,500</td><td>最上階・中住戸</td></tr>
+        <tr><td class="num">303</td><td>3F</td><td>1LDK</td><td class="n">36.33㎡</td><td class="n">66,000</td><td class="n">3,500</td><td class="n">69,500</td><td>最上階・東端・二面採光</td></tr>
+        <tr class="sub"><td colspan="4">3F 小計　3戸</td><td class="n">198,000</td><td class="n">10,500</td><td class="n">208,500</td><td></td></tr>
+        <tr><td class="num">201</td><td>2F</td><td>1LDK</td><td class="n">36.33㎡</td><td class="n">65,000</td><td class="n">3,500</td><td class="n">68,500</td><td>西端</td></tr>
+        <tr><td class="num">202</td><td>2F</td><td>1LDK</td><td class="n">36.33㎡</td><td class="n">65,000</td><td class="n">3,500</td><td class="n">68,500</td><td>中住戸</td></tr>
+        <tr><td class="num">203</td><td>2F</td><td>1LDK</td><td class="n">36.33㎡</td><td class="n">65,000</td><td class="n">3,500</td><td class="n">68,500</td><td>東端・二面採光</td></tr>
+        <tr class="sub"><td colspan="4">2F 小計　3戸</td><td class="n">195,000</td><td class="n">10,500</td><td class="n">205,500</td><td></td></tr>
+        <tr><td class="num">101</td><td>1F</td><td>1LDK</td><td class="n">36.33㎡</td><td class="n">63,000</td><td class="n">3,500</td><td class="n">66,500</td><td>1F・視線と防犯で▲3,000</td></tr>
+        <tr><td class="num">102</td><td>1F</td><td>1LDK</td><td class="n">36.33㎡</td><td class="n">63,000</td><td class="n">3,500</td><td class="n">66,500</td><td>中住戸</td></tr>
+        <tr><td class="num">103</td><td>1F</td><td>1LDK</td><td class="n">36.33㎡</td><td class="n">63,000</td><td class="n">3,500</td><td class="n">66,500</td><td>東端・二面採光</td></tr>
+        <tr class="sub"><td colspan="4">1F 小計　3戸</td><td class="n">189,000</td><td class="n">10,500</td><td class="n">199,500</td><td></td></tr>
+        <tr><td class="num">P1-P4</td><td>―</td><td>駐車場</td><td class="n">4台</td><td class="n">24,000</td><td class="n">―</td><td class="n">24,000</td><td>6,000円／台・敷地内直角駐車</td></tr>
+        <tr class="tot"><td colspan="3">合計　9戸＋駐車4台</td><td class="n">327.00㎡</td><td class="n">606,000</td><td class="n">31,500</td><td class="n">637,500</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rr-foot">
+    <div><dt>戸数</dt><dd>9<small>戸</small></dd></div>
+    <div><dt>平均賃料</dt><dd>64,667<small>円</small></dd></div>
+    <div><dt>坪単価</dt><dd>5,884<small>円/坪</small></dd></div>
+    <div class="acc"><dt>月額合計</dt><dd>637,500<small>円</small></dd></div>
+    <div class="acc"><dt>年額合計</dt><dd>7,650,000<small>円</small></dd></div>
+  </div>
+
+  <div class="tw" style="margin-top:22px">
+    <table>
+      <thead><tr><th>想定賃料の根拠</th><th class="n">水準</th></tr></thead>
+      <tbody>
+        <tr><td>新潟市中央区の実勢相場（アットホーム・直近3ヶ月）</td><td class="n">1LDK 57,900／2DK 63,600<br>2LDK 73,900／全体平均 51,300</td></tr>
+        <tr><td>参考：白山駅の実勢相場</td><td class="n">1LDK 57,300／2DK 63,000</td></tr>
+        <tr><td>36.33㎡の1LDK（洋室6.5帖＋LDK9.0帖）。新築プレミアムを上乗せ</td><td class="n">＋7,000〜8,000</td></tr>
+        <tr><td>全戸南向き・バルコニー付・最上階は眺望（海まで徒歩1分・高台）</td><td class="n">3F＋1,000</td></tr>
+        <tr><td>駅遠（新潟駅3,300m・バス便）による抑制</td><td class="n">上限を抑制</td></tr>
+        <tr><td>1階住戸の視線・防犯による減額</td><td class="n">▲3,000</td></tr>
+        <tr><td>駐車場（敷地内・9戸に4台のため一部は近隣月極を斡旋）</td><td class="n">6,000／台</td></tr>
+        <tr><td>共益費（賃料の約5％）</td><td class="n">3,500</td></tr>
+        <tr class="hi"><td><b>設定した想定賃料</b></td><td class="n"><b>3F 66,000／2F 65,000／1F 63,000</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:14px;font-size:12.5px;color:var(--ink-3)">満室想定です。空室率（10〜20％目安）、募集費、管理費、修繕費、固都税は別途ご検討ください。<b>9戸に対し敷地内駐車は4台</b>で、新潟市は車保有率が高いため、近隣月極駐車場の確保と斡旋を前提に置いています。ここが確保できないと1LDKの客付けに影響します。</p>
+</section>
+
+<section>
+  <div class="shead"><h2>補足</h2><span class="tag">NOTES</span></div>
+  <ul class="supp">
+    <li><b>斜線がほとんど効かない、条件の良い土地</b>
+      第一種中高層住居専用地域ですが、都市計画情報（令和7年3月18日）で<b>絶対高さ制限なし・外壁後退なし・高度地区なし・北側斜線なし・日影規制あり</b>。北側斜線が「なし」なのは、日影規制の対象区域では法56条1項3号が適用除外になるためです。日影規制の対象は<b>高さ10m超</b>（法別表第4）なので、高さ9.5mの木造3階建ては対象外。道路斜線・隣地斜線にも余裕があり、<b>3階建てが素直に組めます</b>。前2件（関屋恵町・子平町）と違い接道の条例規定でも詰みません（新潟県建築基準条例11条の4m接道を間口10mでクリア）。</li>
+    <li><b>戸数を決めるのは駐車場付置義務</b>
+      新潟市共同住宅の建築に関する指導要綱は1棟10戸以上が対象で、第一種中高層住居専用地域は<b>戸数の60％</b>を同一敷地内に確保する義務があります。12戸なら8台ですが、間口10mでは直角駐車4台が限界。<b>9戸が上限</b>です。要綱の推奨するワンルーム最低専有面積19㎡も、36.33㎡なら問題ありません。</li>
+    <li><b>解体費と越境の是正</b>
+      現況は家屋3棟（課税明細で57.10㎡・13.50㎡・84.18㎡、大正15年／昭和40年／昭和43年）。<b>解体は買主負担で売主概算350万円</b>、家屋内の残置物処分も買主負担です。境界確認図には「点名K1〜K2の隣地境界について建物が越境しているが、現所有者は承知しており、将来建て替えの時はこの境界を通す」旨の確約文言があり、<b>解体で越境は解消</b>されますが、確約書の承継と隣地との再確認が必要です。築100年（大正15年）の棟があるためアスベスト事前調査は法定義務。</li>
+    <li><b>面積は分筆後に確定する</b>
+      5133番65（登記132.23㎡／境界確認図の実測118.22㎡＝縄縮み）と5133番108（登記102.47㎡）の2筆。販売面積220.20㎡は<b>擁壁ブロックに合わせて分筆登記した後の概算</b>で、実測118.22＋102.47＝220.69㎡とおおむね整合します。ただし<b>分筆位置が確定するまで建蔽率・容積率の基礎数値が動きます</b>。本ボリュームは220.20㎡ベースで、1㎡減ると建築面積上限が0.6㎡減ります。</li>
+    <li><b>擁壁と高低差</b>
+      「擁壁ブロックに合わせ分筆」「高台から望む眺望」との記載から、<b>敷地内外に擁壁と高低差があります</b>。擁壁の種類・高さ・築年と、既存擁壁を残して建てられるか（安全性の確認、場合により造り替え）が造成費・基礎工事費に直結します。図面から擁壁の詳細は読み取れていないため現地確認が必要です。宅地造成等工事規制区域の指定有無もあわせて確認してください。</li>
+    <li><b>ハザード ── 海まで徒歩1分の立地</b>
+      資料一式に洪水・土砂災害／津波／浸水の各ハザードマップが添付されています。<b>海に近く津波浸水想定の対象になり得る</b>一方、「高台」との記載もあります。浸水深区分と津波の地域区分（沿岸・河川上・平地浸水など）は融資評価と保険料に影響するため、確定させてください。</li>
+    <li><b>前面道路の幅員は要確認</b>
+      REINS・概要書はいずれも「西 約6m 市道」ですが、資料一式の新潟市道路現況平面図には7.3／7.5／7.9／(7.8)／(8.2)などの数値が並んでいます。対象地の前面がどの数値かは判別できていません。<b>幅員が6mでも7.5mでも基準容積は指定200％のまま</b>（6.0m×0.4＝240％＞200％）なので本ボリュームは変わりませんが、消防活動と工事車両の面では広いほうが有利です。</li>
+    <li><b>ガスの引込</b>
+      北陸ガスの回答は「都市ガス低圧本支管が整備済（道路口径50）」かつ<b>「1本の引込管を共同でご使用されている（と思われる）」</b>。9戸分の新規引込は別途協議・負担金が発生する可能性があります。上水は配水管DIP150、下水は公共下水（CP150／HP150）が整備済です。</li>
+    <li><b>売主・取引の状況</b>
+      売出780万円（坪11.71万）。所有者は5133-65が個人（相続登記済）、5133-108が別の個人からの取得者で<b>2筆で所有者が異なります</b>。ヒアリング事項に「申し込みありですが2番手で申し込み受け付けます」との記載があり、<b>先行者がいます</b>。あわせて、いただいた44千円/㎡（＝220.20㎡で968.9万円相当）は相続税路線価と読めます。売出価格3.54万円/㎡は路線価水準を下回っており、積算・融資評価の材料になります。<br>確認先：新潟市 建築行政課（建築確認・構造） <span class="tel">025-226-2849</span>　道路関係 <span class="tel">025-226-2845</span></li>
+  </ul>
+</section>
+
+<footer>
+  <h3>前提条件</h3>
+  <ul>
+    <li>敷地面積は販売資料の220.20㎡（分筆後の概算）を採用。間口10.0m×奥行22.02mの整形地として矩形で計算しています。実際の分筆位置・形状により建築面積上限と戸割りは変動します。</li>
+    <li>ボリュームは敷地の想定形状に矩形を置き、隣地離隔0.5m・開放廊下1.4m・南側バルコニー1.0m・道路側の駐車帯5.01mを引いた残りから算出。共同住宅の共用廊下・階段は容積不算入、1m以下のバルコニー跳ね出しは建築面積不算入。</li>
+    <li>1戸あたりの最低専有面積は地方エリアの基準として23㎡を採用（関東は18㎡〜）。戸幅2.7m以上、住戸奥行9m程度までを目安としています。</li>
+    <li>容積率は指定200％を採用。前面道路6.0m×0.4＝240％＞200％のため、前面道路幅員による低減は効きません。</li>
+    <li>建築費＝施工床坪数×坪単価。3階建ては坪70万（法27条の1時間準耐火＝木三共のため地方標準60万に＋10万）、2階建ては坪60万。上下水道引込・地盤改良・外構工事を含みます。<b>解体費（売主概算350万円）・擁壁の補強や造り替え・造成費は含みません。</b></li>
+    <li>日影規制は「対象は高さ10m超」（法別表第4・第一種中高層住居専用地域）という法の規定に基づく判断です。新潟市が条例で指定した規制時間・測定面の具体値は本資料作成時点で確認できていませんが、高さ10m以下であれば規制時間の値によらず対象外になります。設計で最高高さ10.0m以下を担保することが条件です。</li>
+    <li>擁壁・高低差・ハザード（津波・浸水）の具体値、前面道路の実幅員、越境の範囲は図面から確定できていません。現地確認と行政照会が必要です。</li>
+    <li>想定レントロールは満室想定です。空室率・募集費・管理費・修繕費・固都税は含みません。</li>
+    <li>建物配置・住戸割り・駐車台数は机上検討です。建築確認の可否は特定行政庁および指定確認検査機関の判断によります。</li>
+  </ul>
+  <h3>出典</h3>
+  <ul>
+    <li>REINS売買物件概要（物件番号100133667144）・REINS図面、物件概要書（株式会社千代田開発）、資料一式（境界確認図・公図・登記事項証明書・道路現況平面図・上水道配水管図・下水道台帳・ガス導管調査回答・固定資産課税明細・各種ハザードマップ）、新潟市都市計画情報（令和7年3月18日）</li>
+    <li><a href="https://www1.g-reiki.net/pref.niigata/reiki_honbun/e401RG00000828.html">新潟県建築基準条例</a></li>
+    <li><a href="https://www.city.niigata.lg.jp/kurashi/jyutaku/kenchiku/sonotahorei/kenchiku_kyodojutaku/kyodojutaku.html">新潟市共同住宅の建築に関する指導要綱</a></li>
+    <li><a href="https://www.athome.co.jp/chintai/souba/niigata/niigata_chuo-city/">新潟市中央区の家賃相場（アットホーム・直近3ヶ月）</a>／<a href="https://www.athome.co.jp/chintai/souba/niigata/hakusan-st/">白山駅の家賃相場</a></li>
+    <li><a href="https://chiyodakaihatsu.net/sale/218/">株式会社千代田開発 物件ページ</a></li>
+  </ul>
+  <p style="color:var(--ink-3)">案件15558／ボリュームチェック＋想定レントロール／2026年9月7日</p>
+</footer>
+
+</div>
+
+</body>
+</html>
