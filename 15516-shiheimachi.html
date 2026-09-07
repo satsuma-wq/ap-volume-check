@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>子平町 2項道路奥のボリューム</title>
+<style>:root{color-scheme:light dark}body{margin:0}img{max-width:100%}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+
+<style>
+:root{
+  --paper:#F4F6F5; --surface:#FFFFFF; --surface-2:#EBEFEF;
+  --ink:#17242E; --ink-2:#4A5C68; --ink-3:#778892;
+  --line:#CBD5D6; --line-2:#E0E6E6; --line-strong:#B4C0C2;
+  --accent:#1F6089; --accent-2:#E2ECF3; --accent-ink:#154765;
+  --ok:#2C7A5B; --ok-bg:#E3F0EA;
+  --ng:#A93226; --ng-bg:#F6E4E2;
+  --warn:#8F6318; --warn-bg:#F5ECDB;
+  --shadow:0 1px 2px rgba(23,36,46,.06), 0 8px 24px -16px rgba(23,36,46,.28);
+  --serif:"Shippori Mincho B1",'Hiragino Mincho ProN','Yu Mincho',serif;
+  --sans:"Zen Kaku Gothic New",'Hiragino Sans','Yu Gothic',system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F161B; --surface:#161F26; --surface-2:#1D272F;
+    --ink:#E7EDEF; --ink-2:#A8B7C0; --ink-3:#7C8C96;
+    --line:#2B3A44; --line-2:#222E36; --line-strong:#3A4C58;
+    --accent:#74B4DC; --accent-2:#1A2C39; --accent-ink:#9CCDEC;
+    --ok:#63C296; --ok-bg:#162C24;
+    --ng:#E4837A; --ng-bg:#33201E;
+    --warn:#D6A64C; --warn-bg:#2E2618;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F161B; --surface:#161F26; --surface-2:#1D272F;
+  --ink:#E7EDEF; --ink-2:#A8B7C0; --ink-3:#7C8C96;
+  --line:#2B3A44; --line-2:#222E36; --line-strong:#3A4C58;
+  --accent:#74B4DC; --accent-2:#1A2C39; --accent-ink:#9CCDEC;
+  --ok:#63C296; --ok-bg:#162C24;
+  --ng:#E4837A; --ng-bg:#33201E;
+  --warn:#D6A64C; --warn-bg:#2E2618;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px 96px}
+h1,h2,h3{font-family:var(--serif);text-wrap:balance;margin:0}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* masthead */
+.mast{border-bottom:2px solid var(--ink);padding:44px 0 18px}
+.eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-3);font-weight:500;font-family:var(--mono)}
+.mast h1{font-size:clamp(29px,4.4vw,42px);line-height:1.28;margin:10px 0 6px;font-weight:700}
+.mast .sub{color:var(--ink-2);font-size:14.5px;margin:0}
+.specrow{display:flex;flex-wrap:wrap;margin-top:22px;
+  border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--surface)}
+.specrow div{flex:1 1 148px;padding:11px 14px;border-right:1px solid var(--line-2)}
+.specrow div:last-child{border-right:0}
+.specrow dt{font-size:10.5px;letter-spacing:.13em;color:var(--ink-3);margin:0 0 3px;font-family:var(--mono)}
+.specrow dd{margin:0;font-size:16px;font-weight:700;font-family:var(--mono);
+  font-variant-numeric:tabular-nums}
+.specrow dd small{font-size:11.5px;font-weight:400;color:var(--ink-2);font-family:var(--sans)}
+
+/* section */
+section{margin-top:52px}
+.shead{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--line);
+  padding-bottom:9px;margin-bottom:22px}
+.shead h2{font-size:22px;font-weight:700}
+.shead .tag{font-family:var(--mono);font-size:11px;color:var(--ink-3);letter-spacing:.1em}
+p{margin:0 0 14px;max-width:68ch}
+.lead{font-size:16.5px;color:var(--ink-2);max-width:70ch}
+
+/* verdict */
+.verdicts{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:14px}
+.v{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:18px 18px 16px;
+  box-shadow:var(--shadow);border-top:4px solid var(--line)}
+.v.ng{border-top-color:var(--ng)} .v.ok{border-top-color:var(--ok)} .v.warn{border-top-color:var(--warn)}
+.v .stamp{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:600;
+  letter-spacing:.14em;padding:3px 9px;border-radius:2px;margin-bottom:9px}
+.v.ng .stamp{background:var(--ng-bg);color:var(--ng)}
+.v.ok .stamp{background:var(--ok-bg);color:var(--ok)}
+.v.warn .stamp{background:var(--warn-bg);color:var(--warn)}
+.v h3{font-size:17px;margin-bottom:7px;line-height:1.45}
+.v p{font-size:13.5px;color:var(--ink-2);margin:0;line-height:1.7}
+.v .cite{margin-top:10px;padding-top:9px;border-top:1px dashed var(--line);
+  font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+
+/* ===== 積層図（側面ボリューム） ===== */
+.building{border:1px solid var(--line-strong);border-radius:3px;
+  background:var(--surface);padding:18px;box-shadow:var(--shadow)}
+.building .bt{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+  padding-bottom:11px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+.building .bt b{font-family:var(--serif);font-size:16px}
+.building .bt em{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--ink-3)}
+.roofline{height:0;border-top:2px solid var(--ink);margin:0 0 0 74px;position:relative}
+.roofline span{position:absolute;right:0;top:-19px;font-family:var(--mono);
+  font-size:10.5px;color:var(--ink-3)}
+.floor{display:grid;grid-template-columns:74px 1fr;gap:14px;align-items:center;padding:9px 0}
+.floor + .floor{border-top:1px dashed var(--line)}
+.floor .lab{font-family:var(--mono);font-size:12px;color:var(--ink-3);font-weight:700}
+.floor .lab small{display:block;font-size:10px;font-weight:400;letter-spacing:.04em}
+.units{display:grid;gap:6px}
+.u5{grid-template-columns:repeat(5,1fr)} .u4{grid-template-columns:repeat(4,1fr)}
+.u3{grid-template-columns:repeat(3,1fr)} .u6{grid-template-columns:repeat(6,1fr)}
+.unit{background:var(--accent-2);border:1px solid var(--accent);
+  border-radius:2px;padding:9px 4px;text-align:center}
+.unit b{display:block;font-family:var(--mono);font-size:12.5px;color:var(--accent-ink)}
+.unit span{font-size:10.5px;color:var(--ink-2)}
+.unit.add{background:var(--warn-bg);border-color:var(--warn)}
+.unit.add b{color:var(--warn)}
+.groundline{height:0;border-top:3px solid var(--ink);margin:6px 0 0 74px}
+.corridor{margin-top:13px;padding:8px 12px;background:var(--surface-2);
+  border-radius:2px;font-size:12.5px;color:var(--ink-2);text-align:center}
+.bfoot{margin-top:12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));
+  gap:0;border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.bfoot div{padding:8px 10px;border-right:1px solid var(--line-2);text-align:center}
+.bfoot div:last-child{border-right:0}
+.bfoot dt{font-size:10px;letter-spacing:.1em;color:var(--ink-3);font-family:var(--mono);margin:0 0 2px}
+.bfoot dd{margin:0;font-family:var(--mono);font-size:15px;font-weight:600;
+  font-variant-numeric:tabular-nums}
+.bfoot dd small{font-size:10.5px;font-weight:400;color:var(--ink-2);font-family:var(--sans)}
+
+/* logic chain */
+.chain{display:grid;margin:24px 0 6px;border:1px solid var(--line);
+  border-radius:4px;overflow:hidden;background:var(--surface)}
+.step{display:grid;grid-template-columns:52px 1fr;border-bottom:1px solid var(--line-2)}
+.step:last-child{border-bottom:0}
+.step .k{background:var(--surface-2);display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:13px;font-weight:600;color:var(--accent);
+  border-right:1px solid var(--line-2)}
+.step .b{padding:14px 16px}
+.step .b > b{display:block;font-size:14.5px;margin-bottom:3px}
+.step .b span b{display:inline;font-size:inherit;margin:0}
+.step .b span{font-size:13px;color:var(--ink-2);line-height:1.7;display:block}
+.step.res .k{background:var(--ng-bg);color:var(--ng)}
+.step.res2 .k{background:var(--ok-bg);color:var(--ok)}
+
+/* table */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:580px;font-size:13.5px}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid var(--line-2);vertical-align:top}
+thead th{background:var(--surface-2);font-size:11px;letter-spacing:.1em;color:var(--ink-2);
+  font-weight:600;font-family:var(--mono);white-space:nowrap;border-bottom:1px solid var(--line)}
+tbody tr:last-child td{border-bottom:0}
+td.n,th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.hi td{background:var(--accent-2)}
+tr.hi td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+.law{font-family:var(--mono);font-size:11.5px;color:var(--accent-ink);white-space:nowrap}
+.qt{font-size:12.5px;color:var(--ink-2);line-height:1.65;border-left:2px solid var(--line);
+  padding-left:10px;margin-top:5px;display:block}
+.pill{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:600;
+  padding:2px 7px;border-radius:2px;letter-spacing:.06em}
+.pill.ok{background:var(--ok-bg);color:var(--ok)}
+.pill.ng{background:var(--ng-bg);color:var(--ng)}
+.pill.warn{background:var(--warn-bg);color:var(--warn)}
+
+/* plan */
+.plan{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:18px;
+  box-shadow:var(--shadow)}
+.plan svg{width:100%;height:auto;display:block;max-width:560px;margin:0 auto}
+.svg-sans{font-family:var(--sans)} .svg-mono{font-family:var(--mono)}
+.plan svg text{fill:var(--ink-2)}
+.cap{font-size:12px;color:var(--ink-3);margin:12px auto 0;text-align:left;line-height:1.7;max-width:56ch}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.twocol table{min-width:0}
+.twocol .tw{max-width:100%}
+.twocol.wide-l{grid-template-columns:1.05fr .95fr}
+@media(max-width:860px){.twocol,.twocol.wide-l{grid-template-columns:1fr}
+  .units{grid-template-columns:repeat(3,1fr)!important}}
+
+.callout{background:var(--warn-bg);border:1px solid color-mix(in srgb,var(--warn) 32%,transparent);
+  border-radius:4px;padding:16px 18px;margin:20px 0}
+.callout b{color:var(--warn);font-size:14px;display:block;margin-bottom:5px;font-family:var(--serif)}
+.callout p{margin:0;font-size:13.5px;color:var(--ink-2);max-width:none}
+
+.acts{list-style:none;padding:0;margin:0;counter-reset:a;display:grid;gap:10px}
+.acts li{counter-increment:a;display:grid;grid-template-columns:30px 1fr;gap:13px;
+  background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:14px 16px}
+.acts li::before{content:counter(a);font-family:var(--mono);font-size:12px;font-weight:600;
+  color:var(--accent);background:var(--accent-2);border-radius:2px;height:23px;
+  display:flex;align-items:center;justify-content:center}
+.acts b{display:block;font-size:14.5px;margin-bottom:3px}
+.acts span{font-size:13px;color:var(--ink-2);line-height:1.7}
+.tel{font-family:var(--mono);font-size:12.5px;color:var(--accent-ink);
+  background:var(--accent-2);padding:1px 6px;border-radius:2px;white-space:nowrap}
+
+footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
+  font-size:12px;color:var(--ink-3);line-height:1.85}
+footer h3{font-size:13px;font-family:var(--sans);font-weight:700;color:var(--ink-2);
+  margin:0 0 6px}
+footer ul{padding-left:1.1em;margin:0 0 16px}
+footer a{color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<p style="max-width:1020px;margin:0 auto;padding:14px 20px 0;font-size:12.5px"><a href="./" style="color:#154765;text-decoration:none">&larr; ボリュームチェック一覧</a></p>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="eyebrow">案件 15516 ／ ボリュームチェック</div>
+  <h1>子平町　2項道路奥の台形地</h1>
+  <p class="sub">宮城県仙台市青葉区子平町３０２番７・３０２番１９　／　仙山線 東北福祉大前駅 徒歩13分　／　現況：木造2階建て共同住宅あり</p>
+  <div class="specrow">
+    <div><dt>敷地</dt><dd>261.66<small> ㎡ / 79.2坪</small></dd></div>
+    <div><dt>建蔽／容積</dt><dd>60<small>％</small>/160<small>％</small></dd></div>
+    <div><dt>間口</dt><dd>17.95<small> m ／2項道路</small></dd></div>
+    <div><dt>階数</dt><dd>3<small> 階（斜線次第）</small></dd></div>
+    <div><dt>戸数</dt><dd>15<small> 戸 or 9戸</small></dd></div>
+    <div><dt>施工床</dt><dd>142.5<small> 坪</small></dd></div>
+  </div>
+</header>
+
+<section>
+  <div class="shead"><h2>結論</h2><span class="tag">VERDICT</span></div>
+  <p class="lead">防火指定がなく、間口17.95mで接道の条例規定も問題なし。<b>木造3階建てで15戸</b>入り、建蔽率と容積率をほぼ同時に使い切ります。ただし<b>第2種高度地区の北側斜線の式ひとつで15戸が9戸まで落ちます</b>。ここが最初に確認すべき数字です。</p>
+  <div class="verdicts">
+    <div class="v ok">
+      <span class="stamp">最大</span>
+      <h3>木造3階建て 15戸</h3>
+      <p>北側離隔3.60mの場合。建物13.85×11.34m＝157.0㎡で建蔽率上限ちょうど、専有409.8㎡で容積も上限の98％まで使えます。1戸27.3㎡、施工床142.5坪。</p>
+      <div class="cite">建蔽 157.0／157.0㎡　容積 157／160％</div>
+    </div>
+    <div class="v ng">
+      <span class="stamp">分岐</span>
+      <h3>斜線が厳しい型なら9戸</h3>
+      <p>北側離隔が7.50m必要な型だと、敷地の南北17.95mから7.5m取られて建物が9.95mまで縮み、<b>15戸→9戸</b>。建築面積も128.5㎡に落ちます。仙塩広域都市計画高度地区の決定内容を要確認。</p>
+      <div class="cite">第2種高度地区の斜線式</div>
+    </div>
+    <div class="v warn">
+      <span class="stamp">前提</span>
+      <h3>道路は寺院所有・持分を取得しない</h3>
+      <p>通行する道路本体302-14・302-12は<b>江巖寺の所有</b>で、買主が取得するのは自地の後退帯302-19のみ。15戸分の給排水の引込には掘削承諾が必須で、取れなければ着工できません。</p>
+      <div class="cite">公図・実測図の所有者記載</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="shead"><h2>ボリューム図</h2><span class="tag">MASSING</span></div>
+  <p>確定図の実寸（南北17.95m ×　東西 北15.54〜南13.91mの台形）に建物を実際に置いた結果です。効いてくるのは容積でも建蔽でもなく<b>北側斜線</b>で、式の型によって次の2つに分かれます。</p>
+
+  <div class="building">
+    <div class="bt"><b>ケースA　1.25L＋5m 型　→　木造3階建て 15戸</b><em>北側離隔 3.60m ／ GL＋9.5m</em></div>
+    <div class="roofline"><span>屋根</span></div>
+    <div class="floor">
+      <div class="lab">3F<small>5戸</small></div>
+      <div class="units u5">
+        <div class="unit"><b>301</b><span>1K 27.3㎡</span></div>
+        <div class="unit"><b>302</b><span>1K 27.3㎡</span></div>
+        <div class="unit"><b>303</b><span>1K 27.3㎡</span></div>
+        <div class="unit"><b>304</b><span>1K 27.3㎡</span></div>
+        <div class="unit"><b>305</b><span>1K 27.3㎡</span></div>
+      </div>
+    </div>
+    <div class="floor">
+      <div class="lab">2F<small>5戸</small></div>
+      <div class="units u5">
+        <div class="unit"><b>201</b><span>1K 27.3㎡</span></div>
+        <div class="unit"><b>202</b><span>1K 27.3㎡</span></div>
+        <div class="unit"><b>203</b><span>1K 27.3㎡</span></div>
+        <div class="unit"><b>204</b><span>1K 27.3㎡</span></div>
+        <div class="unit"><b>205</b><span>1K 27.3㎡</span></div>
+      </div>
+    </div>
+    <div class="floor">
+      <div class="lab">1F<small>5戸</small></div>
+      <div class="units u5">
+        <div class="unit"><b>101</b><span>1K 27.3㎡</span></div>
+        <div class="unit"><b>102</b><span>1K 27.3㎡</span></div>
+        <div class="unit"><b>103</b><span>1K 27.3㎡</span></div>
+        <div class="unit"><b>104</b><span>1K 27.3㎡</span></div>
+        <div class="unit"><b>105</b><span>1K 27.3㎡</span></div>
+      </div>
+    </div>
+    <div class="groundline"></div>
+    <div class="corridor">建物 13.85 × 11.34m ／ 外部開放廊下1.4m（容積不算入）を西＝道路側に配置 ／ 駐車は北側3.6mの離隔帯に縦列2台が限界 ／ 駐輪15台以上は東側2.1〜4.4mの帯</div>
+    <div class="bfoot">
+      <div><dt>建築面積</dt><dd>157.0<small>㎡</small></dd></div>
+      <div><dt>専有計</dt><dd>409.8<small>㎡</small></dd></div>
+      <div><dt>容積率</dt><dd>157<small>％</small></dd></div>
+      <div><dt>施工床</dt><dd>142.5<small>坪</small></dd></div>
+      <div><dt>建築費</dt><dd>9,973<small>万</small></dd></div>
+    </div>
+  </div>
+
+  <div class="building" style="margin-top:18px">
+    <div class="bt"><b>ケースB　0.6L＋5m 型　→　木造3階建て 9戸</b><em>北側離隔 7.50m ／ GL＋9.5m</em></div>
+    <div class="roofline"><span>屋根</span></div>
+    <div class="floor">
+      <div class="lab">3F<small>3戸</small></div>
+      <div class="units u3">
+        <div class="unit"><b>301</b><span>1LDK 36.8㎡</span></div>
+        <div class="unit"><b>302</b><span>1LDK 36.8㎡</span></div>
+        <div class="unit"><b>303</b><span>1LDK 36.8㎡</span></div>
+      </div>
+    </div>
+    <div class="floor">
+      <div class="lab">2F<small>3戸</small></div>
+      <div class="units u3">
+        <div class="unit"><b>201</b><span>1LDK 36.8㎡</span></div>
+        <div class="unit"><b>202</b><span>1LDK 36.8㎡</span></div>
+        <div class="unit"><b>203</b><span>1LDK 36.8㎡</span></div>
+      </div>
+    </div>
+    <div class="floor">
+      <div class="lab">1F<small>3戸</small></div>
+      <div class="units u3">
+        <div class="unit"><b>101</b><span>1LDK 36.8㎡</span></div>
+        <div class="unit"><b>102</b><span>1LDK 36.8㎡</span></div>
+        <div class="unit"><b>103</b><span>1LDK 36.8㎡</span></div>
+      </div>
+    </div>
+    <div class="groundline"></div>
+    <div class="corridor">建物 9.95 × 12.91m ／ 北側に7.50m取られて南北が縮み、1戸あたりは広くなるが戸数が6戸減る ／ 北側の7.5m帯には駐車4〜5台が置ける</div>
+    <div class="bfoot">
+      <div><dt>建築面積</dt><dd>128.5<small>㎡</small></dd></div>
+      <div><dt>専有計</dt><dd>331.5<small>㎡</small></dd></div>
+      <div><dt>容積率</dt><dd>127<small>％</small></dd></div>
+      <div><dt>施工床</dt><dd>116.6<small>坪</small></dd></div>
+      <div><dt>建築費</dt><dd>8,160<small>万</small></dd></div>
+    </div>
+  </div>
+
+  <div class="twocol" style="margin-top:26px">
+    <div class="plan">
+      <svg viewBox="0 0 460 400" role="img" aria-label="配置図。台形の敷地に建物157㎡を北側から3.6m離して配置。">
+        <defs>
+          <pattern id="hatchV" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="0" x2="0" y2="6" style="stroke:var(--line);stroke-width:1.2"/>
+          </pattern>
+        </defs>
+        <polygon points="326.2,71.4 448,88 448,330 370.3,296.2"
+                 style="fill:url(#hatchV);stroke:var(--line);stroke-width:1"/>
+        <text x="408" y="190" text-anchor="middle" font-size="10.5" class="svg-sans" style="fill:var(--ink-3)">龍雲院</text>
+        <text x="408" y="205" text-anchor="middle" font-size="10.5" class="svg-sans" style="fill:var(--ink-3)">墓地</text>
+
+        <polygon points="122.6,122.1 181.3,348.5 146.1,358.7 80.1,134.5"
+                 style="fill:var(--surface-2);stroke:var(--line);stroke-width:1"/>
+        <text x="56" y="236" text-anchor="middle" font-size="10" class="svg-sans" style="fill:var(--ink-2)">2項道路</text>
+        <text x="56" y="250" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ng)">江巖寺所有</text>
+        <text x="56" y="264" text-anchor="middle" font-size="9.5" class="svg-mono" style="fill:var(--ink-3)">現況2.8→1.7m</text>
+
+        <polygon points="122.6,122.1 130,120 196.0,344.2 181.3,348.5"
+                 style="fill:var(--warn-bg);stroke:var(--warn);stroke-width:1.1"/>
+        <polygon points="130,120 326.2,71.4 370.3,296.2 196.0,344.2"
+                 style="fill:var(--accent-2);stroke:var(--accent);stroke-width:1.9"/>
+
+        <polygon points="130,120 326.2,71.4 291.1,121.5 149.4,163.2"
+                 style="fill:var(--ng-bg);stroke:var(--ng);stroke-width:1;stroke-dasharray:4 3"/>
+        <text x="228" y="112" text-anchor="middle" font-size="10.5" font-weight="600"
+              class="svg-mono" style="fill:var(--ng)">北側斜線の離隔 3.60m</text>
+
+        <polygon points="149.4,163.2 291.1,121.5 342.1,294.6 200.4,336.3"
+                 style="fill:var(--accent);fill-opacity:.22;stroke:var(--accent-ink);stroke-width:2.2"/>
+        <line x1="159.6" y1="197.8" x2="301.3" y2="156.1" style="stroke:var(--accent-ink);stroke-width:.8"/>
+        <line x1="169.8" y1="232.4" x2="311.5" y2="190.7" style="stroke:var(--accent-ink);stroke-width:.8"/>
+        <line x1="180.0" y1="267.1" x2="321.7" y2="225.4" style="stroke:var(--accent-ink);stroke-width:.8"/>
+        <line x1="190.2" y1="301.7" x2="331.9" y2="260.0" style="stroke:var(--accent-ink);stroke-width:.8"/>
+        <line x1="167.9" y1="158.0" x2="218.9" y2="331.1" style="stroke:var(--accent-ink);stroke-width:1;stroke-dasharray:5 3"/>
+        <text x="180" y="252" text-anchor="middle" font-size="9" class="svg-sans"
+              style="fill:var(--accent-ink)" transform="rotate(74 180 252)">開放廊下 1.4m</text>
+
+        <text x="254" y="224" text-anchor="middle" font-size="13.5" font-weight="600"
+              class="svg-mono" style="fill:var(--accent-ink)">157.0 ㎡ / 階</text>
+        <text x="254" y="241" text-anchor="middle" font-size="10.5" class="svg-sans" style="fill:var(--ink-2)">3層　5戸/階　計15戸</text>
+        <text x="254" y="256" text-anchor="middle" font-size="10" class="svg-mono" style="fill:var(--ink-2)">13.85 × 11.34 m</text>
+
+        <line x1="130" y1="120" x2="196.0" y2="344.2" style="stroke:var(--ok);stroke-width:4"/>
+        <text x="64" y="88" text-anchor="middle" font-size="11.5" font-weight="600"
+              class="svg-mono" style="fill:var(--ok)">間口 17.95 m</text>
+        <line x1="74" y1="94" x2="140" y2="148" style="stroke:var(--ok);stroke-width:.9"/>
+
+        <text x="224" y="86" text-anchor="middle" font-size="10.5" class="svg-mono" style="fill:var(--ink-2)">15.54</text>
+        <text x="292" y="332" text-anchor="middle" font-size="10.5" class="svg-mono" style="fill:var(--ink-2)">13.91</text>
+        <text x="356" y="188" text-anchor="middle" font-size="10.5" class="svg-mono" style="fill:var(--ink-2)">17.63</text>
+        <text x="286" y="376" text-anchor="middle" font-size="10" class="svg-sans" style="fill:var(--warn)">302-19（後退帯）16.22㎡</text>
+        <line x1="222" y1="370" x2="192" y2="330" style="stroke:var(--warn);stroke-width:.9"/>
+
+        <g transform="translate(36,54)">
+          <line x1="0" y1="12" x2="0" y2="-10" style="stroke:var(--ink);stroke-width:1.6"/>
+          <path d="M0,-15 L5,-2 L0,-5 L-5,-2 Z" style="fill:var(--ink)"/>
+          <text x="12" y="4" font-size="12" class="svg-mono" style="fill:var(--ink-2)">N</text>
+        </g>
+        <text x="450" y="386" text-anchor="end" font-size="9.5" class="svg-mono" style="fill:var(--ink-3)">机上ボリューム／要実測再検証</text>
+      </svg>
+      <p class="cap">配置図（ケースA）。敷地が南へすぼまるため建物は西（道路）寄せ、東側に2.1〜4.4mの残地。<b>駐車は北側3.6mの離隔帯に縦列2台が限界</b>で、直角駐車の奥行5.0mは取れません。</p>
+    </div>
+
+    <div class="plan">
+      <svg viewBox="0 0 460 340" role="img" aria-label="断面図。北側斜線の2つの型による必要離隔の違い。">
+        <line x1="40" y1="270" x2="440" y2="270" style="stroke:var(--ink);stroke-width:2"/>
+        <line x1="90" y1="270" x2="90" y2="46" style="stroke:var(--ink-3);stroke-width:1.4;stroke-dasharray:6 4"/>
+        <text x="90" y="36" text-anchor="middle" font-size="10.5" class="svg-sans" style="fill:var(--ink-2)">北側隣地境界</text>
+        <line x1="90" y1="170" x2="90" y2="270" style="stroke:var(--ok);stroke-width:1.6"/>
+        <line x1="90" y1="170" x2="234" y2="-55" style="stroke:var(--ok);stroke-width:1.6"/>
+        <text x="146" y="76" font-size="10.5" font-weight="600" class="svg-mono" style="fill:var(--ok)">ケースA 1.25L＋5m</text>
+        <line x1="90" y1="170" x2="410" y2="34" style="stroke:var(--ng);stroke-width:1.6"/>
+        <text x="322" y="60" font-size="10.5" font-weight="600" class="svg-mono" style="fill:var(--ng)">ケースB 0.6L＋5m</text>
+        <text x="80" y="222" text-anchor="end" font-size="10" class="svg-mono" style="fill:var(--ink-3)">5m</text>
+
+        <rect x="147.6" y="80" width="221.6" height="190"
+              style="fill:var(--accent);fill-opacity:.18;stroke:var(--accent-ink);stroke-width:2"/>
+        <line x1="147.6" y1="143.3" x2="369.2" y2="143.3" style="stroke:var(--accent-ink);stroke-width:.9"/>
+        <line x1="147.6" y1="206.7" x2="369.2" y2="206.7" style="stroke:var(--accent-ink);stroke-width:.9"/>
+        <text x="258" y="118" text-anchor="middle" font-size="11" class="svg-mono" style="fill:var(--accent-ink)">3F　5戸</text>
+        <text x="258" y="181" text-anchor="middle" font-size="11" class="svg-mono" style="fill:var(--accent-ink)">2F　5戸</text>
+        <text x="258" y="245" text-anchor="middle" font-size="11" class="svg-mono" style="fill:var(--accent-ink)">1F　5戸</text>
+        <text x="258" y="68" text-anchor="middle" font-size="10.5" class="svg-mono" style="fill:var(--accent-ink)">GL＋9.5m</text>
+
+        <line x1="90" y1="288" x2="147.6" y2="288" style="stroke:var(--ok);stroke-width:1.6"/>
+        <line x1="90" y1="282" x2="90" y2="294" style="stroke:var(--ok);stroke-width:1.6"/>
+        <line x1="147.6" y1="282" x2="147.6" y2="294" style="stroke:var(--ok);stroke-width:1.6"/>
+        <text x="119" y="306" text-anchor="middle" font-size="10.5" font-weight="600" class="svg-mono" style="fill:var(--ok)">3.60m</text>
+
+        <line x1="90" y1="322" x2="210" y2="322" style="stroke:var(--ng);stroke-width:1.6"/>
+        <line x1="90" y1="316" x2="90" y2="328" style="stroke:var(--ng);stroke-width:1.6"/>
+        <line x1="210" y1="316" x2="210" y2="328" style="stroke:var(--ng);stroke-width:1.6"/>
+        <text x="150" y="338" text-anchor="middle" font-size="10.5" font-weight="600" class="svg-mono" style="fill:var(--ng)">7.50m</text>
+        <line x1="210" y1="270" x2="210" y2="322" style="stroke:var(--ng);stroke-width:1;stroke-dasharray:4 3"/>
+        <text x="440" y="264" text-anchor="end" font-size="9.5" class="svg-mono" style="fill:var(--ink-3)">南 →</text>
+      </svg>
+      <p class="cap">断面図。3階建て（高さ9.5m）に必要な北側離隔が、斜線式の型で<b>3.60mと7.50m</b>に分かれます。敷地の南北は17.95mしかないため、7.50m取られると建物の南北長が9.95mまで縮み、<b>15戸が9戸まで落ちます</b>。</p>
+    </div>
+  </div>
+
+  <div class="tw" style="margin-top:22px">
+    <table>
+      <thead><tr><th>ケース</th><th class="n">北側離隔</th><th>建物</th><th class="n">建築面積</th><th class="n">戸数</th><th class="n">1戸</th><th class="n">専有計</th><th class="n">容積</th><th class="n">施工床</th><th class="n">建築費</th></tr></thead>
+      <tbody>
+        <tr class="hi"><td><b>A</b>　3階建て／1.25L＋5m型</td><td class="n">3.60m</td><td class="num">13.85 × 11.34m</td><td class="n">157.0㎡</td><td class="n">15</td><td class="n">27.3㎡</td><td class="n">409.8㎡</td><td class="n">157%</td><td class="n">142.5坪</td><td class="n">9,973万</td></tr>
+        <tr><td><b>B</b>　3階建て／0.6L＋5m型</td><td class="n">7.50m</td><td class="num">9.95 × 12.91m</td><td class="n">128.5㎡</td><td class="n">9</td><td class="n">36.8㎡</td><td class="n">331.5㎡</td><td class="n">127%</td><td class="n">116.6坪</td><td class="n">8,160万</td></tr>
+        <tr><td>C　2階建て／1.25L＋5m型</td><td class="n">1.20m</td><td class="num">16.25 × 9.66m</td><td class="n">157.0㎡</td><td class="n">12</td><td class="n">22.3㎡</td><td class="n">267.7㎡</td><td class="n">102%</td><td class="n">95.0坪</td><td class="n">5,699万</td></tr>
+        <tr><td>D　2階建て／0.6L＋5m型</td><td class="n">2.50m</td><td class="num">14.95 × 10.50m</td><td class="n">157.0㎡</td><td class="n">10</td><td class="n">26.8㎡</td><td class="n">268.5㎡</td><td class="n">103%</td><td class="n">95.0坪</td><td class="n">5,699万</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:14px;font-size:13px;color:var(--ink-2)">いずれも片廊下型（開放廊下1.4m・容積不算入）、隣地離隔は各辺0.5m、建物は矩形で南辺基準に収めた前提。建築費は3階建て坪70万（法27条の1時間準耐火＝木三共）、2階建て坪60万。2階建ては建蔽率で先に止まり容積が100％前後しか使えないため、<b>3階建てが成立するかどうかがこの土地のボリュームを決めます</b>。</p>
+</section>
+
+<section>
+  <div class="shead"><h2>ボリューム以前に潰すこと</h2><span class="tag">GATES</span></div>
+  <div class="chain">
+    <div class="step res2"><div class="k">◯</div><div class="b">
+      <b>前面私道の道路種別 ── 法42条2項道路で確定</b>
+      <span>仙台市の指定道路図で2項道路（狭あい道路）の色で着色され、「子平町確定図」の現況実測平面図（S=1:100）にも<b>「法42条2項道路」と明記</b>、道路中心線・敷地境界線・道路後退線・道路後退予定線の4本が作図されています。<br>新設境界点が道路中心線から誤差2mm以内で2.00mの位置にあることから、<b>302番19（16.22㎡）＝302番7のセットバック帯を分筆したもの</b>と確認でき、<b>261.66㎡は後退処理後の有効宅地</b>としてそのまま建蔽・容積の算定基礎に使えます。</span></div></div>
+    <div class="step res"><div class="k">!</div><div class="b">
+      <b>道路本体は江巖寺の所有 ── 通行・掘削承諾が必須</b>
+      <span>通行する道路本体は<b>302番14（92.21㎡）と302番12（20.66㎡）で、いずれも所有者は江巖寺</b>。買主が取得するのは自地側の後退帯302-19のみで、道路の共有持分は付いてきません。15戸分の給水・排水・ガスを道路下で引き込むため、<b>掘削承諾が取れなければ計画が動きません</b>。既存の共同住宅が建っているので前例はあるはずですが、新築で管径を上げる場合は別途協議になるのが通常です。</span></div></div>
+    <div class="step res"><div class="k">!</div><div class="b">
+      <b>現況道路が狭い ── 南端1.65m、対岸は未後退</b>
+      <span>座標から算出した現況幅員は<b>北端2.82m・中間2.12m・南端1.65m</b>。<b>西側（対岸）は「道路後退予定線」のままで未後退</b>のため、法定4.0mが実現するのは対岸の建て替え後です。行き止まり（袋路）で、唯一の出口は北端の位置指定道路経由。<b>工事車両・生コン車の進入と消防活動</b>は現況幅員で判断されます。</span></div></div>
+    <div class="step"><div class="k">G</div><div class="b">
+      <b>県条例8条 ── 間口17.95mでクリア見込</b>
+      <span>宮城県建築基準条例8条（指定建築物・階数3以上の接道幅）の具体的数値は公開情報から確認できていませんが、<b>本地の間口は17.95mある</b>ため、新潟県条例のような「4m以上」型であっても余裕でクリアします。第7条（路地状敷地）は本地が私道に直接面するため適用外です。</span></div></div>
+  </div>
+
+  <div class="callout">
+    <b>3階建て・10戸以上は近隣説明が要る</b>
+    <p>仙台市中高層建築物等の建築に係る紛争の予防と調整に関する条例は、<b>高さ10m超または地階を除く階数3以上の建築物</b>、および<b>住戸数10以上の集合住宅</b>を対象とします。標識設置のうえ敷地境界線から建物高さの概ね2倍の範囲の近隣住民へ説明し、確認申請の<b>15日前（特定中高層建築物は30日前）</b>までに街並み形成課へ報告書を提出する必要があります。ケースA・Bとも該当。<b>南隣302番8は共同住宅「第一コーポ徳生」</b>で日照の申し出が出やすい配置です。工程に1〜2ヶ月の余裕を見込んでください。</p>
+  </div>
+</section>
+
+<section>
+  <div class="shead"><h2>敷地と法規制</h2><span class="tag">SITE &amp; CODE</span></div>
+  <div class="twocol wide-l">
+    <div class="tw">
+      <table>
+        <thead><tr><th>項目</th><th>内容</th></tr></thead>
+        <tbody>
+          <tr><td>所在</td><td>仙台市青葉区子平町302番7・302番19</td></tr>
+          <tr><td>地積</td><td class="num">302-7：261.66㎡（79.15坪）<br>302-19：16.22㎡（後退帯）</td></tr>
+          <tr><td>形状</td><td>台形（ほぼ整形）<br>北15.54／東17.63／南13.91／西17.95m</td></tr>
+          <tr><td>分筆</td><td>令和8年4月7日、302-7（268.69㎡）から錯誤更正のうえ302-19を分筆・地積更正済</td></tr>
+          <tr><td>所有者</td><td>有限会社コミュニティ開発（令和8年4月23日取得）</td></tr>
+          <tr><td>都市計画</td><td>市街化区域／立地適正化計画 <b>居住誘導区域</b></td></tr>
+          <tr><td>用途地域</td><td>第二種中高層住居専用地域</td></tr>
+          <tr><td>建蔽／容積</td><td class="num">60％／指定200％<br><b>基準容積160％</b>（前面道路4.0m×0.4）</td></tr>
+          <tr><td>高度地区</td><td>第2種高度地区</td></tr>
+          <tr><td>防火指定</td><td><b>なし</b></td></tr>
+          <tr><td>接道</td><td>西 <b>法42条2項道路</b>（私道）<br>間口17.95m／セットバック分筆済<br>現況幅員 北端2.82m・南端1.65m<br><b>対岸未後退</b>／行き止まり</td></tr>
+          <tr><td>道路の所有</td><td>302-14・302-12<br><b>いずれも江巖寺／持分取得なし</b></td></tr>
+          <tr><td>隣地</td><td>東：<b>龍雲院 墓地3,176㎡</b>（CB塀1枚）<br>北：302-5 戸建／南：302-8 共同住宅</td></tr>
+          <tr><td>現況</td><td>木造2階建 共同住宅「コーポショーエー」<br>昭和57年11月新築／各階85.05㎡<br>解体費 約206万（51.5坪×坪4万）</td></tr>
+          <tr><td>景観</td><td>北山宮町界隈ゾーン C-1地区（高さ30m以下）</td></tr>
+          <tr><td>埋蔵文化財</td><td>対象地は<b>指定なし</b></td></tr>
+          <tr><td>宅造規制</td><td><b>宅地造成等工事規制区域に該当</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>根拠</th><th>内容</th><th style="width:94px">判定</th></tr></thead>
+        <tbody>
+          <tr><td class="law">法42条2項</td><td>中心線から2m後退した線を境界とみなす<span class="qt">指定道路図・確定図で確認。302-19の分筆で後退処理済み。</span></td><td><span class="pill ok">処理済</span></td></tr>
+          <tr><td class="law">法43条</td><td>道路に2m以上接すること<span class="qt">間口17.95m。大幅に満たす。</span></td><td><span class="pill ok">適合</span></td></tr>
+          <tr><td class="law">県条例7条</td><td>路地状敷地の幅員規定<span class="qt">西辺全長が道路に面するため路地状敷地に当たらない。</span></td><td><span class="pill ok">適用外</span></td></tr>
+          <tr><td class="law">県条例8条</td><td>階数3以上の建築物の接道幅<span class="qt">数値未確認だが間口17.95mでクリア見込。</span></td><td><span class="pill ok">クリア見込</span></td></tr>
+          <tr><td class="law">法27条</td><td>3階以上の共同住宅は耐火建築物等<span class="qt">2019年改正により1時間準耐火（木三共）で対応可。坪単価+10万を見込む。</span></td><td><span class="pill warn">準耐火</span></td></tr>
+          <tr><td class="law">法61条</td><td>防火・準防火地域内の制限<span class="qt">防火指定なしのため適用なし。</span></td><td><span class="pill ok">適用なし</span></td></tr>
+          <tr><td class="law">高度地区</td><td>第2種高度地区の北側斜線<span class="qt">式の型で必要離隔が3.60mと7.50mに分かれ、戸数が15戸と9戸に変わる。<b>ボリュームを決める最大要因</b>。</span></td><td><span class="pill ng">要確認</span></td></tr>
+          <tr><td class="law">私道の権利</td><td>通行・掘削承諾<span class="qt">道路は江巖寺所有。持分を取得しないため引込工事に承諾が要る。</span></td><td><span class="pill ng">最優先</span></td></tr>
+          <tr><td class="law">令121条</td><td>2以上の直通階段<span class="qt">3階建て共同住宅は各階の居室床面積により2階段が必要な場合あり。準耐火構造による緩和の範囲内か要検証。</span></td><td><span class="pill warn">要検証</span></td></tr>
+          <tr><td class="law">市中高層条例</td><td>3階以上／10戸以上は標識設置・近隣説明<span class="qt">確認申請15日前（特定中高層は30日前）までに報告書提出。</span></td><td><span class="pill warn">該当</span></td></tr>
+          <tr><td class="law">宅造規制法</td><td>宅地造成等工事規制区域内は許可要<span class="qt">造成を伴う場合は許可申請。</span></td><td><span class="pill warn">該当</span></td></tr>
+          <tr><td class="law">駐車場条例</td><td>附置義務<span class="qt">都市計画情報上「なし」。</span></td><td><span class="pill ok">義務なし</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="shead"><h2>次のアクション</h2><span class="tag">NEXT</span></div>
+  <ol class="acts">
+    <li><div><b>第2種高度地区の斜線式を確認する</b><span>15戸と9戸を分ける唯一の数字。仙塩広域都市計画高度地区の決定内容を取り寄せ、北側斜線の式（真北方向の水平距離に対する係数と立上り）を確定する。<br>仙台市 都市整備局 計画部 都市計画課 <span class="tel">022-214-8295</span></span></div></li>
+    <li><div><b>江巖寺から通行・掘削の承諾が取れるか確認する</b><span>取れなければ着工できない。道路本体302番14・302番12の所有者は江巖寺で、買主は持分を取得しません。<b>書面での承諾取得可否と承諾料の条件を、売買契約の前提条件として売主に確認</b>してください。既存共同住宅の引込実績の経緯もあわせて聴取する。</span></div></li>
+    <li><div><b>2項道路の後退処理が市に認定済みか確認する</b><span>確定図に後退線が作図され分筆も済んでいるが、<b>仙台市との狭あい道路協議が完了しているかは資料からは確認できません</b>。後退部分の扱いと、対岸未後退のまま建築確認が通るかを確認する。<br>青葉区役所 建設部 街並み形成課 <span class="tel">022-225-7211</span></span></div></li>
+    <li><div><b>県条例8条の接道幅と消防活動の可否を確認する</b><span>条例8条は間口17.95mでクリア見込だが念のため確認。あわせて<b>現況幅員1.65〜2.82mの行き止まり私道で15戸の共同住宅の消防活動が成立するか</b>を所轄消防に事前相談する。<br>仙台市 建築指導課 <span class="tel">022-214-8347</span>　宮城県 建築宅地課 建築指導班 <span class="tel">022-211-3243</span></span></div></li>
+    <li><div><b>木三共の坪単価と、現況道路での施工可否を施工会社に確認する</b><span>3階建ては法27条の1時間準耐火が必要。坪70万で置いているが、南端1.65m・対岸未後退・行き止まりという条件での生コン車進入可否と割増を含めて見積を取る。</span></div></li>
+    <li><div><b>解体見積とアスベスト事前調査</b><span>昭和57年築・木造2階建て延べ170.10㎡。坪4万で206万と置いているが、狭い私道からの搬出とアスベスト含有の有無で振れる。事前調査は法定義務。宅地造成等工事規制区域のため造成を伴う場合は許可申請も必要。</span></div></li>
+  </ol>
+</section>
+
+<footer>
+  <h3>前提条件</h3>
+  <ul>
+    <li>敷地形状は「子平町確定図(写)」の座標求積表から算出。北辺15.544m・東辺17.626m・南辺13.909m・西辺17.947mの台形で、面積検算値261.67㎡は登記地積261.66㎡と一致します。</li>
+    <li>敷地面積は302番7の261.66㎡を使用し、302番19の16.22㎡は算入していません。302-7と302-19の境界線が道路中心線から誤差2mm以内で2.00mの位置にあることから、261.66㎡はセットバック処理後の有効宅地と判断しています。ただし仙台市との狭あい道路協議が完了しているかは資料からは確認できません。</li>
+    <li>現況私道の幅員は北端2.824m・中間2.119m・南端1.651m（座標計算値）。対岸は道路後退予定線のままで未後退のため、法定幅員4.0mが実現するのは対岸の建て替え後です。</li>
+    <li>ボリュームは、敷地の実形状に矩形を置き、隣地離隔0.5m・開放廊下1.4m・北側斜線の離隔を引いた残りから算出しています。片廊下は開放型として容積不算入。</li>
+    <li>第2種高度地区の斜線式は、仙塩広域都市計画高度地区の決定文書PDFからテキストを抽出できず確定できていません。本資料の「1.25L＋5m型」「0.6L＋5m型」は一般的な2つの型を示したもので、仙台市の実際の規定を確認したものではありません。</li>
+    <li>建築費＝施工床坪数×坪単価。3階建ては坪70万（法27条の1時間準耐火＝木三共のため地方標準60万に+10万）、2階建ては坪60万。上下水道引込・地盤改良・外構工事を含み、別途計上しません。解体費206万は別掲。</li>
+    <li>敷地内外の高低差・擁壁の有無は、全図面に標高・擁壁の記載がなく読み取れませんでした。現地確認が必要です。</li>
+    <li>建物配置・住戸割り・駐車台数は机上検討です。敷地が南へすぼまるため、実際の配置では建物を台形に合わせた不整形とすることで戸数が増える余地があります。</li>
+    <li>建築確認の可否は特定行政庁および指定確認検査機関の判断によります。本資料は条文と公開情報からの机上判断です。</li>
+    <li>賃料・利回り・収支は本資料の対象外です。</li>
+  </ul>
+  <h3>出典</h3>
+  <ul>
+    <li>REINS売買物件概要（物件番号100140619072）、土地全部事項証明書（302番7・302番19）、建物全部事項証明書、不動産登記（地図・土地図面・建物図面）、子平町確定図(写)、都市計画図（用途地域図・指定道路図・埋蔵文化財包蔵地図）、住宅地図</li>
+    <li><a href="https://www.pref.miyagi.jp/soshiki/kentaku/kentikukijuntop.html">宮城県建築基準条例関係（宮城県）</a></li>
+    <li><a href="https://www.city.sendai.jp/kenchikushido-shido/tyukousou/tyukousou.html">中高層条例（仙台市）</a></li>
+    <li><a href="https://www.city.sendai.jp/soshikikanri/shise/gaiyo/soshiki/120/138.html">仙台市 都市整備局 建築指導課</a></li>
+    <li><a href="https://www2.wagmap.jp/sendai_tokei/Portal">仙台市都市計画情報インターネット提供サービス</a></li>
+  </ul>
+  <p style="color:var(--ink-3)">案件15516／ボリュームチェック／2026年9月7日</p>
+</footer>
+
+</div>
+
+</body>
+</html>

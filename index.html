@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>AP建築計画 ボリュームチェック</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --paper:#F4F6F5;--surface:#fff;--surface-2:#EBEFEF;
+  --ink:#17242E;--ink-2:#4A5C68;--ink-3:#778892;
+  --line:#CBD5D6;--line-2:#E0E6E6;
+  --accent:#1F6089;--accent-2:#E2ECF3;--accent-ink:#154765;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --sans:"Zen Kaku Gothic New",'Hiragino Sans','Yu Gothic',system-ui,sans-serif;
+  --serif:"Shippori Mincho B1",'Hiragino Mincho ProN',serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0F161B;--surface:#161F26;--surface-2:#1D272F;
+  --ink:#E7EDEF;--ink-2:#A8B7C0;--ink-3:#7C8C96;
+  --line:#2B3A44;--line-2:#222E36;
+  --accent:#74B4DC;--accent-2:#1A2C39;--accent-ink:#9CCDEC;}}
+:root[data-theme="dark"]{
+  --paper:#0F161B;--surface:#161F26;--surface-2:#1D272F;
+  --ink:#E7EDEF;--ink-2:#A8B7C0;--ink-3:#7C8C96;
+  --line:#2B3A44;--line-2:#222E36;
+  --accent:#74B4DC;--accent-2:#1A2C39;--accent-ink:#9CCDEC;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 80px}
+header{border-bottom:2px solid var(--ink);padding:52px 0 18px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.22em;color:var(--ink-3)}
+h1{font-family:var(--serif);font-size:clamp(28px,5vw,38px);margin:10px 0 6px;line-height:1.3}
+header p{margin:0;color:var(--ink-2);font-size:14.5px}
+.list{display:grid;gap:14px;margin-top:34px}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--surface);
+  border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:4px;
+  padding:20px 22px;transition:border-color .15s}
+a.card:hover{border-color:var(--accent)}
+a.card .no{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--ink-3)}
+a.card h2{font-family:var(--serif);font-size:20px;margin:5px 0 8px}
+a.card p{margin:0 0 12px;font-size:13.5px;color:var(--ink-2)}
+.facts{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line-2);border-radius:3px;overflow:hidden}
+.facts div{flex:1 1 96px;padding:8px 10px;border-right:1px solid var(--line-2)}
+.facts div:last-child{border-right:0}
+.facts dt{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;color:var(--ink-3);margin:0 0 2px}
+.facts dd{margin:0;font-family:var(--mono);font-size:14px;font-weight:600;font-variant-numeric:tabular-nums}
+.facts dd small{font-size:10px;font-weight:400;color:var(--ink-2);font-family:var(--sans)}
+footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
+  font-size:12px;color:var(--ink-3);line-height:1.8}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="eyebrow">AP建築計画</div>
+  <h1>ボリュームチェック</h1>
+  <p>土地に対して何階建て・何戸・延床いくら入るかの判定。賃料・利回り・収支は対象外です。</p>
+</header>
+
+<div class="list">
+  <a class="card" href="15390-sekiya.html">
+    <div class="no">案件 15390</div>
+    <h2>関屋恵町　接道2mの袋小路</h2>
+    <p>新潟市中央区関屋恵町12番20・21／越後線 関屋駅 徒歩8分。3階建ては新潟県建築基準条例11条で不可、木造2階建て8戸（上限9戸）。</p>
+    <div class="facts">
+      <div><dt>敷地</dt><dd>150.28<small>㎡</small></dd></div>
+      <div><dt>階数</dt><dd>2<small>階</small></dd></div>
+      <div><dt>戸数</dt><dd>8<small>戸</small></dd></div>
+      <div><dt>1戸</dt><dd>18.2<small>㎡</small></dd></div>
+      <div><dt>施工床</dt><dd>54.6<small>坪</small></dd></div>
+    </div>
+  </a>
+
+  <a class="card" href="15516-shiheimachi.html">
+    <div class="no">案件 15516</div>
+    <h2>子平町　2項道路奥の台形地</h2>
+    <p>仙台市青葉区子平町302番7・19／仙山線 東北福祉大前駅 徒歩13分。木造3階建て15戸、第2種高度地区の斜線式次第で9戸まで落ちる。</p>
+    <div class="facts">
+      <div><dt>敷地</dt><dd>261.66<small>㎡</small></dd></div>
+      <div><dt>階数</dt><dd>3<small>階</small></dd></div>
+      <div><dt>戸数</dt><dd>15<small>戸</small></dd></div>
+      <div><dt>1戸</dt><dd>27.3<small>㎡</small></dd></div>
+      <div><dt>施工床</dt><dd>142.5<small>坪</small></dd></div>
+    </div>
+  </a>
+</div>
+
+<footer>
+  机上ボリュームです。実測・条例照会での再検証が必要です。建築確認の可否は特定行政庁および指定確認検査機関の判断によります。<br>
+  2026年9月7日作成
+</footer>
+</div>
+</body>
+</html>
