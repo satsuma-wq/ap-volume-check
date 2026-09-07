@@ -128,6 +128,27 @@ p{margin:0 0 14px;max-width:68ch}
   font-variant-numeric:tabular-nums}
 .bfoot dd small{font-size:10.5px;font-weight:400;color:var(--ink-2);font-family:var(--sans)}
 
+/* ===== レントロール ===== */
+tr.tot td{background:var(--surface-2);font-weight:700;border-top:2px solid var(--line-strong)}
+tr.sub td{background:var(--accent-2);font-weight:600}
+.rr-foot{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;margin-top:14px;
+  border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--surface)}
+.rr-foot div{padding:11px 14px;border-right:1px solid var(--line-2);text-align:center}
+.rr-foot div:last-child{border-right:0}
+.rr-foot dt{font-size:10px;letter-spacing:.1em;color:var(--ink-3);font-family:var(--mono);margin:0 0 3px}
+.rr-foot dd{margin:0;font-family:var(--mono);font-size:19px;font-weight:600;font-variant-numeric:tabular-nums}
+.rr-foot dd small{font-size:11px;font-weight:400;color:var(--ink-2);font-family:var(--sans)}
+.rr-foot div.acc{background:var(--accent-2)}
+.rr-foot div.acc dd{color:var(--accent-ink)}
+
+/* ===== 補足 ===== */
+.supp{list-style:none;padding:0;margin:0;border:1px solid var(--line);border-radius:4px;
+  background:var(--surface);overflow:hidden}
+.supp li{padding:13px 16px;border-bottom:1px solid var(--line-2);font-size:13px;
+  color:var(--ink-2);line-height:1.72}
+.supp li:last-child{border-bottom:0}
+.supp li > b{color:var(--ink);display:block;font-size:14px;margin-bottom:2px;font-family:var(--sans)}
+
 /* logic chain */
 .chain{display:grid;margin:24px 0 6px;border:1px solid var(--line);
   border-radius:4px;overflow:hidden;background:var(--surface)}
@@ -178,8 +199,9 @@ tr.hi td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
 
 .callout{background:var(--warn-bg);border:1px solid color-mix(in srgb,var(--warn) 32%,transparent);
   border-radius:4px;padding:16px 18px;margin:20px 0}
-.callout b{color:var(--warn);font-size:14px;display:block;margin-bottom:5px;font-family:var(--serif)}
+.callout > b{color:var(--warn);font-size:14px;display:block;margin-bottom:5px;font-family:var(--serif)}
 .callout p{margin:0;font-size:13.5px;color:var(--ink-2);max-width:none}
+.callout p b{display:inline;color:inherit;font-size:inherit;margin:0;font-family:var(--sans)}
 
 .acts{list-style:none;padding:0;margin:0;counter-reset:a;display:grid;gap:10px}
 .acts li{counter-increment:a;display:grid;grid-template-columns:30px 1fr;gap:13px;
@@ -203,7 +225,7 @@ footer a{color:var(--accent-ink)}
 </style>
 </head>
 <body>
-<p style="max-width:1020px;margin:0 auto;padding:14px 20px 0;font-size:12.5px"><a href="./" style="color:#154765;text-decoration:none">&larr; ボリュームチェック一覧</a></p>
+<p style="max-width:1020px;margin:0 auto;padding:14px 20px 0;font-size:12.5px"><a href="./" style="color:#154765;text-decoration:none">&larr; 一覧</a></p>
 
 <div class="wrap">
 
@@ -220,31 +242,6 @@ footer a{color:var(--accent-ink)}
     <div><dt>施工床</dt><dd>54.6<small> 坪</small></dd></div>
   </div>
 </header>
-
-<section>
-  <div class="shead"><h2>結論</h2><span class="tag">VERDICT</span></div>
-  <p class="lead">建蔽率60％＝<b>90.17㎡が天井</b>で、容積160％は97％しか使えません。3階建ては新潟県建築基準条例11条で不可。新潟は地方エリアなので<b>1戸23㎡以上</b>が必要。これを守ると<b>木造2階建て・1K 24.3㎡×6戸</b>になります。</p>
-  <div class="verdicts">
-    <div class="v ok">
-      <span class="stamp">最大</span>
-      <h3>木造2階建て 6戸</h3>
-      <p>建物14.33×6.29m＝90.17㎡で建蔽率をちょうど使い切り。1戸24.3㎡、専有計145.9㎡、施工床54.6坪。片廊下1.2mは開放型として容積不算入。</p>
-      <div class="cite">建蔽 90.17／90.17㎡　容積 97％</div>
-    </div>
-    <div class="v ng">
-      <span class="stamp">不可</span>
-      <h3>3階建ては条例で建てられない</h3>
-      <p>3階以上を共同住宅にすると法27条の特殊建築物になり、<b>県条例11条で道路に4m以上の接道</b>が要求されます。本地は2.00m。設計では解けず、隣地買増し以外に道はありません。</p>
-      <div class="cite">新潟県建築基準条例 第11条</div>
-    </div>
-    <div class="v warn">
-      <span class="stamp">副次</span>
-      <h3>6戸なら市の要綱も外れる</h3>
-      <p>新潟市共同住宅の建築に関する指導要綱は1棟10戸以上が対象で駐車場付置義務が生じますが、<b>間口2.00mでは1台も置けません</b>。6戸なら要綱の対象外で、この問題は起きません。</p>
-      <div class="cite">新潟市共同住宅指導要綱（1棟10戸以上）</div>
-    </div>
-  </div>
-</section>
 
 <section>
   <div class="shead"><h2>ボリューム図</h2><span class="tag">MASSING</span></div>
@@ -357,104 +354,91 @@ footer a{color:var(--accent-ink)}
   </div>
 </section>
 
+
 <section>
-  <div class="shead"><h2>なぜ3階建てが止まるのか</h2><span class="tag">LOGIC</span></div>
-  <p>「間口2mだから3階建ては無理」という直感は結論として正しいのですが、効いている条文は接道義務（法43条）ではありません。法43条は2mあれば足ります。止めているのは<b>県条例が特殊建築物にだけ課す4m接道</b>です。</p>
+  <div class="shead"><h2>想定レントロール</h2><span class="tag">RENT ROLL</span></div>
+  <p>木造2階建て 1K 24.3㎡ × 6戸（満室想定）。関屋駅の実勢に新築プレミアムを乗せ、駐車場ゼロの減価を織り込んだ水準です。</p>
 
-  <div class="chain">
-    <div class="step"><div class="k">01</div><div class="b">
-      <b>3階以上を共同住宅にすると法27条に該当する</b>
-      <span>建築基準法 別表第1(い)欄(二)項。3階以上の階を共同住宅の用途に供するもの、または2階部分の当該用途床面積300㎡以上が対象で、耐火建築物等としなければならない建築物になる。</span></div></div>
-    <div class="step"><div class="k">02</div><div class="b">
-      <b>法27条該当の特殊建築物は道路に4m以上接する必要がある</b>
-      <span class="qt">新潟県建築基準条例 第11条「法第27条の規定に適合する建築物としなければならない特殊建築物の敷地は、道路に4メートル以上有効に接しなければならない。ただし、敷地の路地状部分だけで道路に接し、かつ、その長さが20メートルを超える場合においては、当該路地状部分の幅員は、6メートル以上でなければならない。」</span></div></div>
-    <div class="step res"><div class="k">✕</div><div class="b">
-      <b>本地の接道は2.00m ── 3階建て共同住宅は不成立</b>
-      <span>4mに対して2m不足。なお本地は<b>路地状敷地ですらなく</b>、整形地の北の角が2.00mだけ道路に触れている形なので、ただし書き（路地状部分20m超→幅員6m）は関係がなく、本文の4m規定がそのまま効きます。隣地12-19か12-6を買い増して接道を4mにする以外に道はありません。</span></div></div>
-    <div class="step res2"><div class="k">◯</div><div class="b">
-      <b>2階建てなら法27条に当たらず、条例11条の対象外</b>
-      <span>2階の共同住宅部分を300㎡未満に収めれば法27条非該当。条例11条は「法27条の規定に適合する建築物としなければならない特殊建築物」だけを名宛人にしているため適用がなく、接道は法43条の2mで足ります。</span></div></div>
+  <div class="tw">
+    <table>
+      <thead>
+        <tr><th>号室</th><th>階</th><th>間取り</th><th class="n">専有面積</th><th class="n">想定賃料</th><th class="n">共益費</th><th class="n">合計</th><th>備考</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">201</td><td>2F</td><td>1K</td><td class="n">24.3㎡</td><td class="n">50,000</td><td class="n">3,000</td><td class="n">53,000</td><td>北東向き・開放廊下側</td></tr>
+        <tr><td class="num">202</td><td>2F</td><td>1K</td><td class="n">24.3㎡</td><td class="n">50,000</td><td class="n">3,000</td><td class="n">53,000</td><td>中住戸</td></tr>
+        <tr><td class="num">203</td><td>2F</td><td>1K</td><td class="n">24.3㎡</td><td class="n">50,000</td><td class="n">3,000</td><td class="n">53,000</td><td>端住戸・二面採光</td></tr>
+        <tr class="sub"><td colspan="4">2F 小計　3戸</td><td class="n">150,000</td><td class="n">9,000</td><td class="n">159,000</td><td></td></tr>
+        <tr><td class="num">101</td><td>1F</td><td>1K</td><td class="n">24.3㎡</td><td class="n">48,000</td><td class="n">3,000</td><td class="n">51,000</td><td>1F・視線と防犯で▲2,000</td></tr>
+        <tr><td class="num">102</td><td>1F</td><td>1K</td><td class="n">24.3㎡</td><td class="n">48,000</td><td class="n">3,000</td><td class="n">51,000</td><td>中住戸</td></tr>
+        <tr><td class="num">103</td><td>1F</td><td>1K</td><td class="n">24.3㎡</td><td class="n">48,000</td><td class="n">3,000</td><td class="n">51,000</td><td>端住戸・二面採光</td></tr>
+        <tr class="sub"><td colspan="4">1F 小計　3戸</td><td class="n">144,000</td><td class="n">9,000</td><td class="n">153,000</td><td></td></tr>
+        <tr class="tot"><td colspan="3">合計　6戸</td><td class="n">145.8㎡</td><td class="n">294,000</td><td class="n">18,000</td><td class="n">312,000</td><td>駐車場0台</td></tr>
+      </tbody>
+    </table>
   </div>
 
-  <div class="callout">
-    <b>3階建てには抜け道があるが、ボリュームが増えない</b>
-    <p>法27条1項ただし書きにより、階数3・延べ面積200㎡未満で自動火災報知設備等を設ければ法27条の対象外になり、理屈上は条例11条も外れます。しかし<b>建蔽率60％で建築面積が90.17㎡までしか取れない</b>ため、2階建てでも延べ180㎡まで積める一方、3階建ては200㎡未満の縛りで199㎡が上限。<b>床は19㎡しか増えません</b>。準防火地域の準耐火構造＋自火報のコストだけ増え、条例11条の適用除外は行政の解釈に依存します。取る意味のないリスクです。</p>
+  <div class="rr-foot">
+    <div><dt>戸数</dt><dd>6<small>戸</small></dd></div>
+    <div><dt>平均賃料</dt><dd>49,000<small>円</small></dd></div>
+    <div><dt>坪単価</dt><dd>6,667<small>円/坪</small></dd></div>
+    <div class="acc"><dt>月額合計</dt><dd>312,000<small>円</small></dd></div>
+    <div class="acc"><dt>年額合計</dt><dd>3,744,000<small>円</small></dd></div>
   </div>
+
+  <div class="tw" style="margin-top:22px">
+    <table>
+      <thead><tr><th>想定賃料の根拠</th><th class="n">水準</th></tr></thead>
+      <tbody>
+        <tr><td>関屋駅の実勢相場（アットホーム・直近3ヶ月）</td><td class="n">ワンルーム 38,900<br>1K 40,300／1DK 44,000</td></tr>
+        <tr><td>24.3㎡は広めの1K。新築プレミアムを上乗せ</td><td class="n">＋8,000〜10,000</td></tr>
+        <tr><td>駐車場ゼロの減価（新潟市は車保有率が高い）</td><td class="n">▲2,000〜3,000</td></tr>
+        <tr><td>1階住戸の視線・防犯による減額</td><td class="n">▲2,000</td></tr>
+        <tr><td>共益費（賃料の約6％）</td><td class="n">3,000</td></tr>
+        <tr class="hi"><td><b>設定した想定賃料</b></td><td class="n"><b>2F 50,000／1F 48,000</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:14px;font-size:12.5px;color:var(--ink-3)">満室想定です。空室率（10〜20％目安）、募集費、管理費、修繕費は別途ご検討ください。近隣に月極駐車場を確保して斡旋できれば減価幅は縮められます。</p>
 </section>
 
 <section>
-  <div class="shead"><h2>敷地と法規制</h2><span class="tag">SITE &amp; CODE</span></div>
-  <div class="twocol wide-l">
-    <div class="tw">
-      <table>
-        <thead><tr><th>項目</th><th>内容</th></tr></thead>
-        <tbody>
-          <tr><td>所在</td><td>新潟市中央区関屋恵町12番20・12番21</td></tr>
-          <tr><td>地積</td><td class="num">実測150.28㎡／公簿145.90㎡</td></tr>
-          <tr><td>形状</td><td>整形（15.33m × 9.38〜10.22m）<br>路地状部分なし・全面が有効宅地</td></tr>
-          <tr><td>都市計画</td><td>市街化区域</td></tr>
-          <tr><td>用途地域</td><td>第一種住居地域</td></tr>
-          <tr><td>建蔽／容積</td><td class="num">60％／指定200％<br><b>基準容積160％</b>（前面道路4.0m×0.4）</td></tr>
-          <tr><td>防火指定</td><td>準防火地域</td></tr>
-          <tr><td>接道</td><td>北東 市道中央2-27号線<br>幅員4.00m（実測・台帳3.9／(4.1)）<br><b>接道長2.00m（一方）</b><br><b>行き止まり道路の最奥</b></td></tr>
-          <tr><td>地目・現況</td><td>宅地・更地（砂利＋雑草）／平坦</td></tr>
-          <tr><td>周囲</td><td>四方すべて既存建物あり</td></tr>
-          <tr><td>インフラ</td><td>公営水道・公共下水・都市ガス</td></tr>
-          <tr><td>最寄</td><td>越後線 関屋駅 徒歩8分<br>有明台小 徒歩10分／関屋中 徒歩15分</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="tw">
-      <table>
-        <thead><tr><th>根拠</th><th>内容</th><th style="width:88px">判定</th></tr></thead>
-        <tbody>
-          <tr><td class="law">法43条</td><td>敷地は道路に2m以上接すること<span class="qt">2.00mちょうど。余裕ゼロで、実測で割ると全計画が崩れる。</span></td><td><span class="pill warn">ギリギリ</span></td></tr>
-          <tr><td class="law">県条例11条</td><td>法27条該当の特殊建築物は道路に4m以上<span class="qt">3階建て共同住宅が対象。2m不足。</span></td><td><span class="pill ng">3階は不可</span></td></tr>
-          <tr><td class="law">法61条</td><td>準防火地域内の制限<span class="qt">2階建て延べ500㎡以下なら防火措置で対応可。</span></td><td><span class="pill ok">2階で対応</span></td></tr>
-          <tr><td class="law">令128条</td><td>道路に通ずる幅員1.5m以上の敷地内通路<span class="qt">北の角の2.00m開口から引込む。外壁仕上げや設備の張出しで2mを食わないよう有効寸法の管理が必要。</span></td><td><span class="pill ok">適合</span></td></tr>
-          <tr><td class="law">令121条</td><td>2以上の直通階段を要する場合<span class="qt">2階建てのため1階段で可。</span></td><td><span class="pill ok">1階段</span></td></tr>
-          <tr><td class="law">市指導要綱</td><td>1棟10戸以上で適用・駐車場付置義務<span class="qt">間口2mで駐車場が置けないため10戸以上は不成立。6戸なら対象外。</span></td><td><span class="pill ok">対象外</span></td></tr>
-          <tr><td class="law">日影規制</td><td>第一種住居地域<span class="qt">木造2階建て・軒高7m以下なら対象外となるのが通常。</span></td><td><span class="pill ok">対象外見込</span></td></tr>
-          <tr><td class="law">県条例13条</td><td>長屋は幅員1.5m以上の通路に面すれば可<span class="qt">長屋は特殊建築物ではないため条例11条が及ばない。共同住宅の適法性に不安が残る場合の代替。</span></td><td><span class="pill ok">代替あり</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="shead"><h2>次のアクション</h2><span class="tag">NEXT</span></div>
-  <ol class="acts">
-    <li><div><b>県条例11条の適用範囲を建築行政課に確認する</b><span>「2階建て共同住宅で2階の当該用途部分が300㎡未満なら条例11条の対象外という理解でよいか」を確認し、担当者名と回答を記録する。<br>新潟市 建築行政課（建築確認・構造） <span class="tel">025-226-2849</span>　道路関係 <span class="tel">025-226-2845</span>　新潟市中央区古町通7番町1010番地 古町ルフル6階</span></div></li>
-    <li><div><b>接道2.00mの実測を確定させる</b><span>法43条の2mに対して余裕ゼロ。境界標の現況と隣地との合意状況を確認する。1cmでも欠ければ全案が成立しない。</span></div></li>
-    <li><div><b>地積更正登記の要否を判断する</b><span>公簿145.90㎡・実測150.28㎡。実測で建築確認を通せば建築面積上限が87.54㎡→90.17㎡になり、本ボリュームは実測ベースでないと成立しない。</span></div></li>
-    <li><div><b>所轄消防に事前相談する</b><span>幅員4.0mの行き止まり道路の最奥・開口2.00m。消防活動空地も工事車両の転回スペースも取れない。道路の終端が本地の角にあたるため、消防車の部署位置と転回の可否を具体的に詰める。</span></div></li>
-    <li><div><b>施工会社2〜3社から現地を見た概算見積を取る</b><span>開口2m・行き止まりの最奥で、搬入計画（圧送距離、小型重機の可否、資材揚重、残土搬出、仮設計画）を含めた坪単価を確定させる。坪60万で3,276万と置いているが、ここが最も振れる。</span></div></li>
-  </ol>
+  <div class="shead"><h2>補足</h2><span class="tag">NOTES</span></div>
+  <ul class="supp">
+    <li><b>3階建ては新潟県建築基準条例11条で不可</b>
+      3階以上を共同住宅にすると法27条の特殊建築物になり、同条例11条で道路に4m以上の接道が要求されます。本地は2.00mで2m不足。2階建てなら2階の当該用途部分が300㎡未満で法27条に当たらず、条例11条の対象外になります。確認先は新潟市建築行政課 <span class="tel">025-226-2849</span>。</li>
+    <li><b>接道2.00mは法43条ちょうどで余裕ゼロ</b>
+      境界標の現況と隣地との合意状況を確認してください。実測で2mを割ると全計画が成立しません。</li>
+    <li><b>6戸なら市の指導要綱は対象外</b>
+      新潟市共同住宅の建築に関する指導要綱は1棟10戸以上が対象で駐車場付置義務が生じますが、間口2.00mでは1台も置けません。6戸なら対象外です。</li>
+    <li><b>幅員4.0mの行き止まり道路の最奥</b>
+      消防活動空地も工事車両の転回スペースも取れません。所轄消防への事前相談と、開口2mでの搬入計画（圧送・小運搬）を含んだ施工見積が必要です。</li>
+    <li><b>建築面積90.17㎡は実測ベース</b>
+      公簿145.90㎡・実測150.28㎡。公簿だと上限87.54㎡に下がります。地積更正登記の要否を確認してください。</li>
+    <li><b>敷地は旗竿地ではなく整形地</b>
+      実測平面図の座標求積表から、15.33m × 9.38〜10.22mのほぼ長方形（内角89.7〜93.4°）と確認できます。約45°振れて四隅が方位の角を向くため、住戸の向きは配置検討で再確認が必要です。</li>
+  </ul>
 </section>
 
 <footer>
   <h3>前提条件</h3>
   <ul>
-    <li>敷地形状は実測平面図（2023年3月29日測量・土地家屋調査士 竹石健二）の座標求積表から算出。四隅の内角は89.7°〜93.4°でほぼ長方形、辺長9.38m／15.33m／10.22m／15.33m、面積150.28㎡。路地状部分はなく全面が有効宅地。</li>
-    <li>道路幅員は断面図の官民界間実測4.00m。道路台帳図の記載は3.9／(4.1)で、どちらが認定幅員かは凡例がなく判別できません。</li>
-    <li>ボリュームは、敷地の実形状に矩形を置き、隣地離隔0.5m・開放廊下1.2m・アプローチを引いた残りから算出しています。片廊下は開放型として容積不算入。</li>
-    <li>1戸あたりの最低専有面積は、地方エリアの基準として<b>23㎡</b>を採用しています（関東は18㎡〜）。この下限を割ってまで戸数を増やしていません。戸幅は2.7m以上、住戸奥行は9m程度までを目安としています。</li>
-    <li>建築費＝施工床坪数×坪60万（地方の標準単価）。上下水道引込・地盤改良・外構工事を含み、別途計上しません。開口2mの搬入制約による割増は織り込んでいません。</li>
-    <li>12番20と12番21の内訳面積、および12番21（南東辺沿いの細長い楔状の帯）の正確な幅・形状は、公図が1/500の「地図に準ずる図面」のため読み取れません。合筆または一体利用を前提としています。</li>
-    <li>敷地と道路の高低差は図面から読み取れませんでした。現地確認が必要です。</li>
-    <li>建物配置・住戸割りは机上検討です。敷地が約45°振れて四隅が方位の角を向くため、採光・斜線・住戸の向きは実際の配置検討で再確認が必要です。</li>
-    <li>建築確認の可否は特定行政庁および指定確認検査機関の判断によります。本資料は条文からの机上判断です。</li>
-    <li>賃料・利回り・収支は本資料の対象外です。</li>
+    <li>敷地形状は実測平面図（2023年3月29日測量・土地家屋調査士 竹石健二）の座標求積表から算出。道路幅員は断面図の官民界間実測4.00m（道路台帳図の記載は3.9／(4.1)で、どちらが認定幅員かは判別できません）。</li>
+    <li>ボリュームは敷地の実形状に矩形を置き、隣地離隔0.5m・開放廊下1.2m・アプローチを引いた残りから算出。片廊下は開放型として容積不算入。</li>
+    <li>1戸あたりの最低専有面積は地方エリアの基準として23㎡を採用（関東は18㎡〜）。この下限を割ってまで戸数を増やしていません。戸幅2.7m以上、住戸奥行9m程度までを目安としています。</li>
+    <li>建築費＝施工床坪数×坪60万（地方の標準単価）。上下水道引込・地盤改良・外構工事を含みます。開口2mの搬入制約による割増は織り込んでいません。</li>
+    <li>想定レントロールは満室想定です。空室率・募集費・管理費・修繕費・固都税は含みません。</li>
+    <li>建物配置・住戸割りは机上検討です。建築確認の可否は特定行政庁および指定確認検査機関の判断によります。</li>
+    <li>12番20と12番21の内訳面積、12番21（南東辺沿いの楔状の帯）の正確な形状は、公図が1/500の「地図に準ずる図面」のため読み取れません。合筆または一体利用を前提としています。敷地と道路の高低差も図面からは読み取れず、現地確認が必要です。</li>
   </ul>
   <h3>出典</h3>
   <ul>
     <li>REINS売買物件概要（物件番号100138094815）、販売図面、実測平面図、公図、土地全部事項証明書、道路台帳図、住宅地図、ライフライン図</li>
     <li><a href="https://www1.g-reiki.net/pref.niigata/reiki_honbun/e401RG00000828.html">新潟県建築基準条例（第11条・第13条）</a></li>
     <li><a href="https://www.city.niigata.lg.jp/kurashi/jyutaku/kenchiku/sonotahorei/kenchiku_kyodojutaku/kyodojutaku.html">新潟市共同住宅の建築に関する指導要綱</a></li>
-    <li><a href="https://www.city.niigata.lg.jp/shisei/soshiki/soshikiinfo/kenchiku/kenchikugyosei.html">新潟市 建築部 建築行政課</a></li>
+    <li><a href="https://www.athome.co.jp/chintai/souba/niigata/sekiya-st/">関屋駅の家賃相場（アットホーム・直近3ヶ月）</a></li>
   </ul>
-  <p style="color:var(--ink-3)">案件15390／ボリュームチェック／2026年9月7日</p>
+  <p style="color:var(--ink-3)">案件15390／ボリュームチェック＋想定レントロール／2026年9月7日</p>
 </footer>
 
 </div>
